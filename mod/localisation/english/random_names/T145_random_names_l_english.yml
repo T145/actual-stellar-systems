@@ -1,0 +1,43 @@
+﻿l_english:
+# See also: 00_random_names_l_english.yml, which contains 'name parts' for empires, species, etc.
+
+# Some stellar bodies are named after people - usually those on the development team. Where possible, these strings have been labeled as 'personalities'.
+
+#################
+# STELLAR BODIES
+#################
+
+# Black Holes
+ Great_Annihilator:0 "Great Annihilator"
+ 4U_1543-475:0 "4U 1543-475"
+ IL_Lupi:0 "IL Lupi"
+ A0620-00:0 "A0620-00"
+ V616_Mon:0 "V616 Mon"
+ Cygnus_X-1:0 "Cygnus X-1"
+ Cygnus_X-3:0 "Cygnus X-3"
+ GRO_J0422-32:0 "GRO J0422+32"
+ GRO_J1655-40:0 "GRO J1655-40"
+ V1033_Sco:0 "V1033 Sco"
+ GRS_1124-683:0 "GRS 1124-683"
+ GU_Mus:0 "GU Mus"
+ GRS_1915-105:0 "GRS 1915+105"
+ V1487_Aql:0 "V1487 Aql"
+ GS_2000-25:0 "GS 2000+25"
+ QZ_Vul:0 "QZ Vul"
+ GX_339-4:0 "GX 339-4"
+ V821_Ara:0 "V821 Ara"
+ IGR_J17091-3624:0 "IGR J17091-3624"
+ LB-1:0 "LB-1"
+ MOA-2011-BLG-191:0 "MOA-2011-BLG-191"
+ OGLE-2011-BLG-0462:0 "OGLE-2011-BLG-0462"
+ SN_1997D:0 "SN 1997D"
+ SS_433:0 "SS 433"
+ V404_Cyg:0 "V404 Cyg"
+ V_Puppis:0 "V Puppis"
+ XTE_J1118-480:0 "XTE J1118+480"
+ KV_UMa:0 "KV UMa"
+ XTE_J1550-564:0 "XTE J1550-564"
+ V381_Nor:0 "V381 Nor"
+ XTE_J1650-500:0 "XTE J1650-500"
+ XTE_J1819-254:0 "XTE J1819-254"
+ V4641_Sgr:0 "V4641 Sgr"

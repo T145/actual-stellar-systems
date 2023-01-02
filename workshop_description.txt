@@ -1,0 +1,59 @@
+An educated effort to bring more realism into Stellaris! 🌌
+
+
+
+
+╔╦╗────────╔═╗─────╔╦╗──────
+║╩╠═╦═╦═╦╦╗║║╠═╦╦╦╗║║╠═╦═╦╦╗
+║╦║╬║╬║╬║║║║║║╩╣║║║╠╗║╩╣╬║╔╝
+╚╩╩╩╣╔╣╔╬╗║╚╩╩═╩══╝╚═╩═╩╩╩╝
+────╚╝╚╝╚═╝2023 ─────────────
+
+
+[img]https://raw.githubusercontent.com/quetzatcoatl/Stellaris-Moding-Assets/main/UI/workshop_menus/star_systems_introduction.png[/img]
+
+The primary goal of this mod is to provide more realism to Stellaris without compromising core game mechanics. It focuses on adjusting star systems, their components, and user interface elements related to them. Everything detailed below is mostly [b][i]planned[/i][/b] as the mod is in beta to give players time to test the features, give feedback, and perhaps make adjustments to other mods. Please reference the "Change Notes" tab to learn which features are currently implemented. Screenshots will be updated as more features get added.
+
+[h2]Recommended Companions[/h2]
+[list]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1524731904]Amazing Space Battles[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2864929604]Stellaris Texture Pack 2K/4K[/url] (load before)
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1712760331]StarNet AI[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2268189539]Aggressive Crisis Engine[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2815767345]Shrimp AI[/url]
+[/list]
+
+[hr][/hr]
+
+[img]https://raw.githubusercontent.com/quetzatcoatl/Stellaris-Moding-Assets/main/UI/workshop_menus/star_systems_more_info.png[/img]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2907950426]CHECK OUT THIS GUIDE FOR MORE INFORMATION![/url]
+
+Because Steam doesn't like a big ASS description.
+
+[hr][/hr]
+
+[img]https://raw.githubusercontent.com/quetzatcoatl/Stellaris-Moding-Assets/main/UI/workshop_menus/star_systems_special_thnaks.png[/img]
+
+[list]
+[*]To the mod developers of credited mods!
+[*]@quetzatcoatl: For being an artist of the people!
+[*]@corsairmarks: For advice on how solar system and hyperlane sizes are determined.
+[*]@Dragon Farocity: Who I [strike]stole[/strike] borrowed the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=750660855]heading style[/url] from.
+[*]@Sir Rolin: For advice on making optimal events.
+[/list]
+
+[h2][i]Order load? Update need? Do compatible? Is achievements?[/i][/h2]
+
+Let [url=https://bcssov.github.io/IronyModManager/]Irony Mod Manager[/url] answer those questions for you. Note that the relationship between any mod mentioned in the guide is likely to be [b]mutually exclusive[/b].
+
+Please report any bugs in the "Bug Reports" discussion with information like your mod load order and screenshots. The more information the better. If you've taken the time to verify compatibility with another mod, please post details on any file conflicts and link its workshop page in the "Compatibility Centre" discussion.
+
+[url=https://steamcommunity.com/id/thomasstone/][img]https://i.imgur.com/RDx76BN.png[/img][/url]
+
+[img]https://i.imgur.com/bdg9JsM.png[/img]
+[i]* Referring to [b]common[/b] files.[/i]
+
+[img]https://steamuserimages-a.akamaihd.net/ugc/819002974403344349/DD18664314A26EA83C62E9B0127FFCB35092B53A/[/img]
+
+[img]https://steamuserimages-a.akamaihd.net/ugc/1759189883741239563/E372B73CDB7BAB0D957F83FF2803B8BAD2F470DA/[/img]

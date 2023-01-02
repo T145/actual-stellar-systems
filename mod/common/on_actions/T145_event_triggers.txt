@@ -1,0 +1,6 @@
+on_game_start = {
+	events = {
+		t145.1
+		cara.5000
+	}
+}

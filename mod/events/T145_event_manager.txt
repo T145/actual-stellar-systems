@@ -1,0 +1,11 @@
+namespace = t145
+
+event = {
+	id = t145.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = "has_ass_dlc"
+	}
+}

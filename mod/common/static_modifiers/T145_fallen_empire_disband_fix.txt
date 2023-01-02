@@ -1,0 +1,13 @@
+# Applies to Awakened Empires too
+fallen_empire_base = {
+	starbases_upkeep_mult = -0.5
+	ships_upkeep_mult = -0.5
+	country_naval_cap_add = 100
+	country_resource_max_add = 100000
+	country_occupation_armies_add = 3 # this brings the number up to 8
+	add_base_country_intel = 20 # 50 total with tech bonuses
+
+	# Updated settings!
+	armies_upkeep_mult = -0.5
+	planet_buildings_upkeep_mult = -0.5
+}

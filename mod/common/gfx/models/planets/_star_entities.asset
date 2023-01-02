@@ -1,0 +1,209 @@
+#####    Stars    ######
+
+entity = {
+	name = "star_explosion_entity"
+	pdxmesh = "system_plane_collision_mesh"
+
+	default_state = "explode"
+	state = { name = "explode" state_time = 30 looping = no
+	#next_state = "wait"
+	#	event = { time = 0.0 	particle = "star_explosion_1_effect"  keep_particle = yes trigger_once = no }
+		event = { time = 0.0 	particle = "star_explosion_2_effect"  keep_particle = yes trigger_once = no }
+	#	event = { time = 0.0 	particle = "star_explosion_shockwave_effect"  keep_particle = yes trigger_once = no }
+		event = { trigger_once = yes sound = { soundeffect = "sfx_star_eater_weapon_hit" } }
+		event = { trigger_once = yes sound = { soundeffect = "sfx_star_eater_weapon_hit_distance" } }
+	}
+	scale = 15
+}
+
+entity = { # A
+	name = "a_star_class_star_entity"
+	pdxmesh = "star_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0.0 node = "planet" particle = "a_class_star_particle"  keep_particle = no trigger_once = yes sound = { soundeffect = "amb_star_fusion" } }
+		start_event = { node = "planet" light = "a_class_star_core" }
+	}
+	scale = 1.6
+}
+
+entity = { # B
+	name = "b_star_class_star_entity"
+	pdxmesh = "star_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0.0 node = "planet" particle = "b_class_star_particle"  keep_particle = no trigger_once = yes sound = { soundeffect = "amb_star_fusion" } }
+		start_event = { node = "planet" light = "b_class_star_core" }
+	}
+	scale = 1.8
+}
+
+entity = { # F
+	name = "f_star_class_star_entity"
+	pdxmesh = "star_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0.0 node = "planet" particle = "f_class_star_particle"  keep_particle = no trigger_once = yes sound = { soundeffect = "amb_star_fusion" } }
+		start_event = { node = "planet" light = "f_class_star_core" }
+	}
+	scale = 1.5
+}
+
+entity = { # G
+	name = "g_star_class_star_entity"
+	pdxmesh = "star_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0.0 node = "planet" particle = "g_class_star_particle"  keep_particle = no trigger_once = yes sound = { soundeffect = "amb_star_fusion" } }
+		start_event = { node = "planet" light = "g_class_star_core" }
+	}
+	scale = 1.3
+}
+
+entity = { # K
+	name = "k_star_class_star_entity"
+	pdxmesh = "star_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0.0 node = "planet" particle = "k_class_star_particle"  keep_particle = no trigger_once = yes sound = { soundeffect = "amb_star_fusion" } }
+		start_event = { node = "planet" light = "k_class_star_core" }
+	}
+	scale = 1.2
+}
+
+entity = { # M
+	name = "m_star_class_star_entity"
+	pdxmesh = "star_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0.0 node = "planet" particle = "m_class_star_particle"  keep_particle = no trigger_once = yes sound = { soundeffect = "amb_star_fusion" } }
+		start_event = { node = "planet" light = "m_class_star_core" }
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "neutron_star_entity"
+	pdxmesh = "neutron_star_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0.0 node = "planet" particle = "a_class_star_particle"  keep_particle = no trigger_once = yes sound = { soundeffect = "neutron_star_idle_hum" } }
+		start_event = { node = "planet" light = "neutron_star_core" }
+	}
+	scale = 1.3
+
+	game_data = {
+		size = 175
+	}
+
+	attach = { "planet" = "neutron_outbursts_entity" }
+}
+
+entity = {
+	name = "neutron_outbursts_entity"
+	pdxmesh = "neutron_outbursts_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0.0 node = "polar_effect_1" particle = "neutron_star_outburst_effect"  keep_particle = no trigger_once = yes }
+		event = { time = 0.0 node = "polar_effect_2" particle = "neutron_star_outburst_effect"  keep_particle = no trigger_once = yes }
+	}
+
+	scale = 1.4
+
+	game_data = {
+		uv_animation_speed   = 0.5
+		uv_animation_direction  = { 0.75 1.0 }
+	}
+}
+
+entity = {
+	name = "pulsar_outbursts_entity"
+	pdxmesh = "pulsar_outbursts_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0.0 node = "polar_effect_1" particle = "pulsar_star_outburst_effect"  keep_particle = no trigger_once = yes  sound = { soundeffect = "pulsar_star_idle_hum" } }
+		event = { time = 0.0 node = "polar_effect_2" particle = "pulsar_star_outburst_effect"  keep_particle = no trigger_once = yes }
+	}
+
+	scale = 2.0
+
+	game_data = {
+		uv_animation_speed   = -0.1
+		uv_animation_direction  = { 0.4 0.4 }
+		bloom_factor = 0.5
+	}
+}
+
+entity = {
+	name = "pulsar_entity"
+	pdxmesh = "pulsar_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0.0 node = "" particle = "a_class_star_particle"  keep_particle = no trigger_once = yes }
+		start_event = { node = "planet" light = "neutron_star_core" }
+	}
+
+	game_data = {
+		size = 263
+	}
+
+	attach = { "planet" = "pulsar_outbursts_entity" }
+	scale = 1.0
+}
+
+# entity = {
+# 	name = "black_hole_entity"
+# 	pdxmesh = "black_hole_mesh"
+# 	default_state = "idle"
+# 	state = { name = "idle" animation = "idle"	animation_speed = 0.2
+# 		event = { time = 0 particle = "black_hole_particle" trigger_once = yes keep_particle = yes }
+# 		event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+# 	}
+# 	scale = 20.0
+# 	game_data = {
+# 		size = 170.0
+# 	}
+# }
+
+# UNTOUCHED
+entity = { # ED
+	name = "ed_star_class_star_entity"
+	pdxmesh = "star_mesh"
+	locator = { name = "core" position = { 0 0 0 } }
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0.0 node = "planet" particle = "ed_class_star_particle"  keep_particle = no trigger_once = yes sound = { soundeffect = "amb_star_fusion" } }
+	}
+
+	attach = { core = "extra_dimensional_system_effect_sun" }
+
+	cull_radius = 20000
+	scale = 1.6
+}
+
+entity = { # Toxoid
+	name = "toxoid_star_class_star_entity"
+	pdxmesh = "star_mesh"
+	locator = { name = "root"	position = { 0 0 0 } }
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0.0 node = "planet" particle = "toxic_class_star_effect"  keep_particle = no trigger_once = yes sound = { soundeffect = "tox_amb_star_hum" } }
+		start_event = { node = "planet" light = "tox_class_star_core" }
+	}
+	scale = 1
+	cull_radius = 20000
+	attach = { root = "toxoid_class_star_entity" }
+	attach = { root = "toxoid_class_star_wave_entity" }
+}

@@ -1,0 +1,589 @@
+namespace = nomad
+
+# Create Nomads
+country_event = {
+	id = nomad.1
+	hide_window = yes
+	location = event_target:nomad_spawn
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { exists = event_target:nomad01_country }
+	}
+
+	immediate = {
+		random_rim_system = {
+			limit = {
+				NOR = {
+					any_playable_country = {
+						intel_level = {
+							level > low
+							system = prev
+						}
+					}
+					has_star_flag = hostile_system
+				}
+			}
+			random_system = {
+				limit = {
+					NOT = {
+						has_star_flag = hostile_system
+					}
+					distance = {
+						source = PREV
+						min_distance >= 250 #5
+						max_distance <= 500 #50
+					}
+				}
+				set_star_flag = nomad_mid_point
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_system = {
+							has_star_flag = nomad_mid_point
+						}
+					}
+				}
+				random_system = {
+					limit = {
+						distance = {
+							source = PREV
+							min_distance >= 150
+							max_distance <= 500
+						}
+					}
+					set_star_flag = nomad_mid_point
+				}
+			}
+			random_rim_system = {
+				limit = {
+					distance = {
+						source = PREV
+						min_distance >= 400 #50
+						# Distance trigger distances are squared and stored in CFixedPoint which will overflow at values larger than +-2^31/1000 ~= +-2147483
+						# Largest value for a distance trigger distance is therefore sqrt(2147483) ~= +-1465
+						max_distance <= 1450 #9999 #100
+					}
+				}
+				set_star_flag = nomad_end_point
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_system = {
+							has_star_flag = nomad_end_point
+						}
+					}
+				}
+				random_rim_system = {
+					limit = {
+						distance = {
+							source = PREV
+							min_distance >= 250
+							# Distance trigger distances are squared and stored in CFixedPoint which will overflow at values larger than +-2^31/1000 ~= +-2147483
+							# Largest value for a distance trigger distance is therefore sqrt(2147483) ~= +-1465
+							max_distance <= 1450 #9999
+						}
+					}
+					set_star_flag = nomad_end_point
+				}
+			}
+			create_species = {
+				# name = NAME_Namarian
+				# plural = "NAME_Namarian_plural"
+				# adjective = "NAME_Namarian"
+				# class = AVI
+				# portrait = random
+				# traits = {
+				# 	trait = "trait_pc_desert_preference"
+				# 	trait = "trait_nomadic"
+				# 	trait = "trait_venerable"
+				# 	trait = "trait_natural_engineers"
+				# }
+				# immortal = yes
+				name = "NAME_Namarian"
+				plural = "NAME_Namarian_plural"
+				adjective = "NAME_Namarian"
+				class = AVI
+				portrait = random
+				traits = {
+					trait = "trait_pc_desert_preference"
+					trait = "trait_nomadic"
+					trait = "trait_venerable"
+					trait = "trait_natural_engineers"
+				}
+				sapient = yes # no = pre-sapient
+				is_mod = no
+				immortal = yes
+				can_be_modified = no
+				allow_negative_traits = no # (default: yes)
+				effect = {}
+			}
+			last_created_species = {
+				save_global_event_target_as = base_namarian
+			}
+			create_country = {
+				name = "NAME_Galactic_Nomads"
+				type = nomad
+				species = last_created_species
+				ignore_initial_colony_error = yes
+				exclude_day_zero_contact = event_target:planet_owners
+				# BUGFIX: Resolves log errors due to being unable to randomize ethics or civics.
+				# These have been tailored to represent what their society could be while space-faring.
+				authority = auth_democratic
+				ethos = {
+					ethic = "ethic_xenophile"
+					ethic = "ethic_spiritualist"
+					ethic = "ethic_militarist"
+				}
+				civics = {
+					civic = "civic_distinguished_admiralty"
+					civic = "civic_scavengers"
+				}
+				flag = {
+					icon = {
+						category = "spherical"
+						file = "flag_spherical_8.dds"
+					}
+					background= {
+						category = "backgrounds"
+						file = "circle.dds"
+					}
+					colors={
+						"purple"
+						"indigo"
+						"null"
+						"null"
+					}
+				}
+			}
+			last_created_country = {
+				set_country_flag = nomad01_country_flag
+				save_global_event_target_as = nomad01_country
+				add_modifier = {
+					modifier = nomad_strength
+					days = -1
+				}
+			}
+			random_system_planet = {
+				set_planet_flag = nomad_starting_point
+				save_event_target_as = nomad_spawn
+			}
+			event_target:nomad01_country = {
+				create_leader = {
+					class = admiral
+					species = owner_main_species
+					name = random
+					skill = 2
+					traits = {
+						trait = "leader_trait_engineer" 	# So the ships can actually repair some damage while the fleet idles.
+						trait = "leader_trait_scout" 		# So the fleet doesn't wander into dangerous systems.
+						trait = "leader_trait_trickster" 	# To avoid engaging in fights even when the AI is dumb.
+					}
+					# Giving "Scout" is a soft bug fix b/c the fleet will try to enter wormholes and simply despawn after.
+					# There may need to be more aggressive changes or a report to PDX.
+				}
+				create_fleet = {
+					name = "NAME_Nomadic_Armada"
+					effect = {
+						set_owner = PREV
+						set_fleet_flag = nomad_main_fleet
+						set_fleet_stance = passive
+						set_aggro_range_measure_from = self
+						set_aggro_range = 50
+						# while = {
+						# 	count = 15
+						# 	create_ship = {
+						# 		name = "NAME_Defender"
+						# 		design = NAME_Protector
+						# 	}
+						# }
+						while = {
+							count = 10 # 10 Cruisers = 20 Destroyers in fleet size
+							create_ship = {
+								# The design doesn't exist, but the name does!
+								name = "NAME_Defender"
+								design = "NAME_Nomad_Cruiser"
+							}
+							create_ship = {
+								# To reflect the "Defender" sentiment above :)
+								name = "NAME_Protector"
+								design = "NAME_Protector"
+							}
+						}
+						while = {
+							count = 3 # 5
+							create_ship = {
+								# Old names were "Home #:" anything else is better.
+								design = "NAME_Diaspora"
+							}
+						}
+						assign_leader = last_created_leader
+						set_location = event_target:nomad_spawn
+						set_fleet_flag = nomad_fleet
+						set_formation_scale = 1.6
+						fleet_event = { id = nomad.2 days = 1 } #Nomads fly towards current destination
+						save_event_target_as = CustomCapital
+					}
+				}
+			}
+		}
+	}
+}
+
+# Actions taken in peaceful system without owner
+fleet_event = {
+	id = nomad.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { is_country_type = nomad }
+		NOT = { has_fleet_flag = nomad_on_mission }
+		solar_system = {
+			NOR = {
+				exists = space_owner
+				has_star_flag = hostile_system
+				has_star_flag = nomad_mid_point
+				has_star_flag = nomad_end_point
+			}
+		}
+	}
+
+	immediate = {
+		fleet_event = { id = nomad.1000 }
+	}
+}
+
+# NOTE: Split up from Event 5 since effects can't be overridden.
+fleet_event = {
+	id = nomad.1000
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			10 = { # Fly to random planet and construct more ships
+				modifier = {
+					factor = 10
+					owner = { fleet_power < 3000 }
+				}
+				modifier = {
+					factor = 5
+					owner = { fleet_power < 5000 }
+				}
+				#modifier = {
+				#	factor = 0.5
+				#	owner = { fleet_power > 5000 }
+				#}
+				modifier = {
+					factor = 0
+					OR = {
+						owner = { fleet_power > 10000 }
+						has_fleet_flag = nomad_built_new_ships
+					}
+				}
+				owner = {
+					if = {
+						limit = {
+							check_variable = {
+								which = nomads_built_ships
+								value > 0
+							}
+						}
+						change_variable = {
+							which = nomads_built_ships
+							value = 0
+						}
+					}
+					else_if = {
+						limit = {
+							NOT = {
+								check_variable = {
+									which = nomads_built_ships
+									value = 0
+								}
+							}
+						}
+						set_variable = {
+							which = nomads_built_ships
+							value = 0
+						}
+					}
+				}
+				queue_actions = {
+					repeat = {
+						max_iterations = 1
+						find_random_planet = {
+							found_planet = {
+								orbit_planet = this
+							}
+							failed = {
+								effect = {
+									id = "nomad.1000.leaving_safe_system_3"
+									root = {
+										fleet_event = { id = nomad.2 } # Nomads fly towards current destination
+									}
+								}
+							}
+						}
+					}
+					repeat = {
+						while = {
+							id = nomad.1000.trigger.1
+							NOT = { has_fleet_flag = nomad_built_new_ships }
+						}
+						wait = {
+							duration = 30
+							random = 10
+						}
+						effect = {
+							id = "nomad.1000.repairing_ships"
+							owner = {
+								every_controlled_ship = {
+									limit = {
+										fleet = {
+											has_fleet_flag = nomad_main_fleet
+										}
+									}
+									repair_ship = yes
+								}
+							}
+						}
+						wait = {
+							duration = 30
+							random = 10
+						}
+						effect = {
+							id = "nomad.1000.building_ships"
+							owner = {
+								change_variable = {
+									which = nomads_built_ships
+									value = 1
+								}
+							}
+							# BUGFIX: The "Defender" ship doesn't exist anymore XD
+							while = {
+								count = 6
+								create_ship = {
+									name = "NAME_Protector"
+									design = "NAME_Protector"
+								}
+							}
+							random_list = {
+								50 = {
+									modifier = {
+										factor = 0
+										owner = {
+											fleet_power < 1500
+										}
+									}
+									modifier = {
+										factor = 5
+										owner = {
+											check_variable = {
+												which = nomads_built_ships
+												value > 4
+											}
+										}
+									}
+									set_timed_fleet_flag = { flag = nomad_built_new_ships days = 120 }
+								}
+								50 = {
+									modifier = {
+										factor = 10
+										owner = {
+											fleet_power < 3000
+										}
+									}
+									modifier = {
+										factor = 0.5
+										owner = {
+											fleet_power > 3000
+										}
+									}
+									modifier = {
+										factor = 0.2
+										owner = {
+											fleet_power > 5000
+										}
+									}
+									modifier = {
+										factor = 0
+										owner = {
+											fleet_power > 10000
+										}
+									}
+								}
+							}
+						}
+					}
+					repeat = {
+						max_iterations = 1
+						effect = {
+							id = "nomad.1000.built_ships"
+							fleet_event = { id = nomad.2 } # Nomads fly towards current destination
+						}
+					}
+				}
+			}
+			80 = { #Fly to random planet and hang around for a bit
+				modifier = {
+					factor = 0
+					owner = {
+						fleet_power < 1500
+					}
+				}
+				queue_actions = {
+					repeat = {
+						max_iterations = 3
+						while = {
+							id = nomad.1000.trigger.2
+							owner = {
+								NOT = { has_country_flag = nomad_exploring_done }
+							}
+						}
+						find_random_planet = {
+							found_planet = {
+								orbit_planet = this
+							}
+							failed = {
+								effect = {
+									id = "nomad.1000.leaving_safe_system_2"
+									root = {
+										fleet_event = { id = nomad.2 } # Nomads fly towards current destination
+									}
+								}
+							}
+						}
+						wait = {
+							duration = 40
+							random = 10
+						}
+						effect = {
+							id = "nomad.1000.keep_looking_or_not"
+							owner = {
+								random_list = {
+									25 = {
+										set_timed_country_flag = { flag = nomad_exploring_done days = 3 }
+									}
+									75 = {}
+								}
+							}
+						}
+					}
+					effect = {
+						id = "nomad.1000.leaving_safe_system_1"
+						root = {
+							fleet_event = { id = nomad.2 } # Nomads fly towards current destination
+						}
+					}
+				}
+			}
+			10 = { } # Do nothing
+		}
+	}
+}
+
+# BALANCE: Have Nomads trade away Protector-class (Destroyers), not Cruisers.
+country_event = {
+	id = nomad.530
+	title = nomad.500.title
+	desc = {
+		text = nomad.530.desc.15ships
+		trigger = {
+			NOT = { has_country_flag = double_fleet }
+		}
+	}
+	desc = {
+		text = nomad.530.desc.30ships
+		trigger = {
+			has_country_flag = double_fleet
+		}
+	}
+	picture = GFX_evt_unknown_ships
+	show_sound = event_ship_thrusters
+	location = root.capital_scope
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = nomad_ignores }
+	}
+
+	immediate = {
+		event_target:nomad01_country = {
+			set_country_flag = nomad_ships_sold
+			random_controlled_ship = {
+				limit = {
+					fleet = {
+						has_fleet_flag = nomad_fleet
+					}
+				}
+				fleet = {
+					save_event_target_as = nomad_fleet
+				}
+			}
+		}
+
+		create_fleet = {
+			name = "NAME_Nomad_Delivery"
+			effect = {
+				set_owner = root
+				create_ship_design = {
+					design = "NAME_Protector" # "NAME_Nomad_Cruiser"
+				}
+				while = {
+					count = 5
+					create_ship = {
+						design = last_created_design
+						upgradable = no
+					}
+				}
+				set_location = {
+					target = root.capital_scope
+					distance = 5
+					angle = random
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				has_country_flag = double_fleet
+			}
+			create_fleet = {
+				name = "NAME_Redirected_Nomad_Delivery"
+				effect = {
+					set_owner = root
+					create_ship_design = {
+						design = "NAME_Protector" # "NAME_Nomad_Cruiser"
+					}
+					while = {
+						count = 10
+						create_ship = {
+							design = last_created_design
+							upgradable = no
+						}
+					}
+					set_location = {
+						target = root.capital_scope
+						distance = 15
+						angle = random
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = OK
+		hidden_effect = {
+			event_target:nomad_fleet = {
+				remove_fleet_flag = nomad_on_mission
+				fleet_event = { id = nomad.2 }
+			}
+		}
+	}
+}

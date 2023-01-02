@@ -1,0 +1,26 @@
+NShip = {
+	FLEET_BASE_FORMATION_SCALE = 8.0	# 3.0
+
+	# Overflow fix!
+	MILITARY_POWER_HEALTH_WEIGHT		= 0.000075 # 0.5
+	MILITARY_POWER_DAMAGE_WEIGHT		= 0.00075 # 0.5
+	MILITARY_POWER_SCALE				= 5600.0 # 0.25
+	MILITARY_POWER_EXPONENT				= 0.4 # 0.65	# math: power = ( ( effective_health * damage_per_day ) ^ exponent ) * scale
+
+	# below values determine how large an effect special values such as shield penetration have on the military power of a weapon
+	MILITARY_POWER_ARMOR_PENETRATION_WEIGHT = 0.42 # 0.5	# larger value = adds more military power
+	MILITARY_POWER_SHIELD_PENETRATION_WEIGHT = 0.42 # 0.5
+	MILITARY_POWER_HULL_DAMAGE_WEIGHT = 0.2 # 0.33
+	MILITARY_POWER_ARMOR_DAMAGE_WEIGHT = 0.2 # 0.33
+	MILITARY_POWER_SHIELD_DAMAGE_WEIGHT = 0.2 # 0.33
+}
+
+NGraphics = {
+	# Better Rings setting
+	# Makes the original value positive
+	PLANET_RING_TILT_FROM_SUN = 0.16
+
+	# Allows more 3D ship spacing
+	SHIP_RANDOM_HEIGHT_OFFSET = 60.0	# 15.0
+	STRIKE_CRAFT_HEIGHT_RANDOM = 20.0	# 5.0
+}

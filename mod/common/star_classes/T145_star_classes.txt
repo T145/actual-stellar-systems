@@ -1,0 +1,228 @@
+# Blue Stars
+sc_b = {
+	class			= b_star
+	icon_scale		= 2.5 # CUSTOM
+	planet			= { key = pc_b_star }
+	spawn_odds		= 1 # 10
+	num_planets		= { min = 4 max = 10 }
+
+	pc_continental	= { spawn_odds = 0.6 }
+	pc_desert		= { spawn_odds = 0.6 }
+	pc_tropical		= { spawn_odds = 0.6 }
+	pc_arid			= { spawn_odds = 0.6 }
+	pc_ocean		= { spawn_odds = 0.6 }
+	pc_tundra		= { spawn_odds = 0.6 }
+	pc_arctic		= { spawn_odds = 0.6 }
+	pc_alpine		= { spawn_odds = 0.6 }
+	pc_savannah		= { spawn_odds = 0.6 }
+}
+
+# White or Blueish Stars
+sc_a = {
+	class			= a_star
+	icon_scale		= 2 # CUSTOM
+	planet			= { key = pc_a_star }
+	spawn_odds		= 6 # 10
+	num_planets		= { min = 4 max = 10 }
+
+	pc_continental	= { spawn_odds = 0.6 }
+	pc_desert		= { spawn_odds = 0.6 }
+	pc_tropical		= { spawn_odds = 0.6 }
+	pc_arid			= { spawn_odds = 0.6 }
+	pc_ocean		= { spawn_odds = 0.6 }
+	pc_tundra		= { spawn_odds = 0.6 }
+	pc_arctic		= { spawn_odds = 0.6 }
+	pc_alpine		= { spawn_odds = 0.6 }
+	pc_savannah		= { spawn_odds = 0.6 }
+}
+
+# Yellow-White Dwarves
+sc_f = {
+	class			= f_star
+	icon_scale		= 1.5 # CUSTOM
+	planet			= { key = pc_f_star }
+	spawn_odds		= 11 # 15
+	num_planets		= { min = 4 max = 10 }
+}
+
+# Yellow Dwarves
+sc_g = {
+	class			= g_star
+	icon_scale		= 1.25 # CUSTOM
+	planet			= { key = pc_g_star }
+	spawn_odds		= 20 # 30
+	num_planets		= { min = 4 max = 10 }
+}
+
+# Orange Dwarves
+sc_k = {
+	class			= k_star
+	icon_scale		= 1.1 # CUSTOM
+	planet			= { key = pc_k_star }
+	spawn_odds		= 30 # 20
+	num_planets		= { min = 4 max = 10 }
+}
+
+# Red Dwarves
+sc_m = {
+	class			= m_star
+	icon_scale		= 0.75 # CUSTOM
+	planet			= { key = pc_m_star }
+	spawn_odds		= 65 # 20
+	num_planets		= { min = 4 max = 10 }
+
+	pc_continental	= { spawn_odds = 0.4 }
+	pc_desert		= { spawn_odds = 0.4 }
+	pc_tropical		= { spawn_odds = 0.4 }
+	pc_arid			= { spawn_odds = 0.4 }
+	pc_ocean		= { spawn_odds = 0.4 }
+	pc_tundra		= { spawn_odds = 0.4 }
+	pc_arctic		= { spawn_odds = 0.4 }
+	pc_alpine		= { spawn_odds = 0.4 }
+	pc_savannah		= { spawn_odds = 0.4 }
+}
+
+# Red Giants
+sc_m_giant = {
+	class			= m_star
+	icon_scale		= 3 # CUSTOM
+	planet			= { key = pc_m_giant_star }
+	spawn_odds		= 3 # 20
+	num_planets		= { min = 4 max = 10 }
+
+	pc_continental	= { spawn_odds = 0.1 }
+	pc_desert		= { spawn_odds = 0.1 }
+	pc_tropical		= { spawn_odds = 0.1 }
+	pc_arid			= { spawn_odds = 0.1 }
+	pc_ocean		= { spawn_odds = 0.1 }
+	pc_tundra		= { spawn_odds = 0.1 }
+	pc_arctic		= { spawn_odds = 0.1 }
+	pc_alpine		= { spawn_odds = 0.1 }
+	pc_savannah		= { spawn_odds = 0.1 }
+}
+
+sc_binary_3 = { # Binary System: Red star paired with White star
+	class			= m_star
+	icon			= c_binary_star
+	planet			= {
+						key = pc_m_giant_star
+						class = m_star
+					}
+	planet			= { # Changed B stars to A stars
+						key = pc_a_star
+						class = a_star
+					}
+	spawn_odds		= 5
+	num_planets	 	= { min = 4 max = 10 }
+
+	pc_desert		= { spawn_odds = 0 }
+	pc_tropical	 	= { spawn_odds = 0 }
+	pc_arid		 	= { spawn_odds = 0 }
+	pc_continental 	= { spawn_odds = 0 }
+	pc_ocean		= { spawn_odds = 0 }
+	pc_tundra		= { spawn_odds = 0 }
+	pc_arctic		= { spawn_odds = 0 }
+	pc_gaia		 	= { spawn_odds = 0 }
+	pc_alpine		= { spawn_odds = 0 }
+	pc_savannah	 	= { spawn_odds = 0 }
+}
+
+sc_binary_5 = { # Binary System: Two Blue stars
+	class			= b_star
+	icon			= a_binary_star
+	planet			= {
+						key = pc_b_star
+						class = b_star
+					}
+	planet			= {
+						key = pc_b_star
+						class = b_star
+					}
+	spawn_odds		= 1 # 5
+	num_planets	 	= { min = 4 max = 10 }
+}
+
+sc_trinary_1 = { # Trinary System
+	class			= g_star
+	icon			= a_trinary_star
+	planet			= {
+						key = pc_g_star
+						class = g_star
+					}
+	planet			= {
+						key = pc_m_star
+						class = m_star
+					}
+	planet			= {
+						key = pc_k_star
+						class = k_star
+					}
+	spawn_odds		= 60 # 30
+	num_planets	 	= { min = 4 max = 10 }
+}
+
+sc_trinary_2 = { # Trinary System
+	class			= b_star
+	icon			= a_trinary_star
+	planet			= {
+						key = pc_b_star
+						class = b_star
+					}
+	planet			= {
+						key = pc_a_star
+						class = a_star
+					}
+	planet			= {
+						key = pc_f_star
+						class = f_star
+					}
+	spawn_odds		= 15 # 30
+	num_planets	 	= { min = 4 max = 10 }
+}
+
+sc_trinary_3 = { # Trinary System
+	class			= k_star
+	icon			= a_trinary_star
+	planet			= {
+						key = pc_k_star
+						class = k_star
+					}
+	planet			= {
+						key = pc_f_star
+						class = f_star
+					}
+	planet			= {
+						key = pc_g_star
+						class = g_star
+					}
+	spawn_odds		= 60 # 30
+	num_planets	 	= { min = 4 max = 10 }
+}
+
+sc_trinary_4 = { # Trinary System
+	class			= b_star
+	icon			= a_trinary_star
+	planet			= {
+						key = pc_b_star
+						class = b_star
+					}
+	planet			= {
+						key = pc_k_star
+						class = k_star
+					}
+	planet			= {
+						key = pc_t_star
+						class = t_star
+					}
+	spawn_odds		= 15 # 30
+	num_planets	 	= { min = 4 max = 10 }
+}
+
+random_list = {
+	name = "rl_starting_stars"
+	stars = {
+		"sc_f"
+		"sc_g"
+		"sc_k"
+	}
+}
