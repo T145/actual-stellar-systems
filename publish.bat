@@ -1,8 +1,9 @@
 @echo off && setlocal enabledelayedexpansion
 
-FOR /F "tokens=1" %%F IN ('"powershell -co [Environment]::GetFolderPath('MyDocuments')"') DO SET DOCS=%%F
-set DEST=%DOCS%\Paradox Interactive\Stellaris\mod
+for /F "tokens=1" %%F in ('"powershell -co [Environment]::GetFolderPath('MyDocuments')"') do set DOCS=%%F
+set DEST="%DOCS%\Paradox Interactive\Stellaris\mod\ActualStellarSystems"
+set SRC="%CD%\mod"
 
-xcopy "%CD%\mod" "%DEST%\ActualStellarSystems" /c /g /d /i /e /r /h /y
+robocopy %SRC% %DEST% /MIR /MT
 
 endlocal && goto :EOF
