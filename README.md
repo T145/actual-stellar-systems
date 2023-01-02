@@ -1,6 +1,6 @@
-# Stellaris Mod Template
+# Actual Stellar Systems
 
-Made for making mods!
+Bringing realism into Stellaris! 🌌
 
 # Dev Environment Setup
 
@@ -12,5 +12,3 @@ Made for making mods!
     - [Paradox Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=tboby.paradox-syntax)
 3. Change the following CWTools settings:
     - Cache: Stellaris = (current game path)
-4. Install the following prerequisite mods:
-    - UI Overhaul Dynamic
