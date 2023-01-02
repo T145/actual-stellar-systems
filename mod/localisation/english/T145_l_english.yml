@@ -1,3 +1,7 @@
 ﻿l_english:
  NAME_Restored_Dreadnought: "Type 46"
  NAME_Restored_Psi_Dreadnought: "Type 37"
+
+ # The game has "requires_not_ring_world," but that's a typo PDX will likely fix at some point.
+ requires_no_ring_world: "$TRIGGER_FAIL$Cannot build on Ring Worlds."
+ requires_ten_pops: "$TRIGGER_FAIL$This world needs a defendable population of at least 10 Pops."
