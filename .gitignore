@@ -1,0 +1,9 @@
+.DS_Store
+*.db
+.vscode/
+
+# IntelliJ project files
+.idea/
+*.iml
+out/
+gen/
