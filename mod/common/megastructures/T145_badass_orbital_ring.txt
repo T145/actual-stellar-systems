@@ -68,7 +68,7 @@ orbital_ring = {
 					has_planet_flag = orbital_ring_planet # CUSTOM
 					has_planet_flag = ruined_orbital_ring_planet
 					# solar_system = { has_star_flag = ring_world_built } # Allow o-rings to be built in systems with ring worlds.
-					is_artificial = yes # Can't be build around ring worlds or habitats.
+					is_artificial = yes # Can't be built around ring worlds or habitats.
 				}
 			}
 			if = {
@@ -146,9 +146,9 @@ orbital_ring = {
 			}
 		}
 		remove_megastructure = fromfrom
-		from = {
-			country_event = { id = tutorial.2121 }
-		}
+
+		# NO SPAM
+		# from = { country_event = { id = tutorial.2121 } }
 	}
 }
 
@@ -254,8 +254,8 @@ orbital_ring_restored = {
 			destroy_ambient_object = this
 		}
 		remove_megastructure = fromfrom
-		from = {
-			country_event = { id = tutorial.2121 }
-		}
+
+		# NO SPAM
+		# from = { country_event = { id = tutorial.2121 } }
 	}
 }
