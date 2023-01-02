@@ -1,6 +1,6 @@
 # Actual Stellar Systems
 
-Bringing realism into Stellaris! 🌌
+An educated effort to bring more realism to the Stellaris experience! 🌌
 
 # Dev Environment Setup
 
