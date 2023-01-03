@@ -9,3 +9,483 @@ event = {
 		set_global_flag = "has_ass_dlc"
 	}
 }
+
+event = {
+	id = t145.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_utopia = yes
+	}
+
+	immediate = {
+		every_system = {
+			limit = {
+				NOR = {
+					exists = space_owner
+					has_star_flag = sealed_system
+                    has_star_flag = lcluster
+					has_star_flag = hostile_system
+					has_star_flag = empire_cluster
+					has_star_flag = marauder_cluster
+					has_star_flag = ruined_dyson_system
+                    has_star_flag = ruined_nexus_system
+                    has_star_flag = ruined_sentry_system
+                    has_star_flag = ruined_ring_system
+				}
+				any_system_planet {
+					NOR = {
+						exists = owner
+						has_anomaly = yes
+						has_planet_flag = megastructure
+						has_planet_flag = has_megastructure # Planets with ruined o-rings are not ok.
+						# solar_system = { has_star_flag = ring_world_built } # Ok in ring world systems.
+						is_artificial = yes
+						has_orbital_station = yes
+						is_asteroid = yes
+						is_moon = yes
+						is_star = yes
+					}
+				}
+			}
+
+			random_list = {
+				99 = {}
+				1 = {
+					random_system_planet = {
+						limit = {
+							NOR = {
+								exists = owner
+								has_anomaly = yes
+								has_planet_flag = megastructure
+								has_planet_flag = has_megastructure # Planets with ruined o-rings are not ok.
+								# solar_system = { has_star_flag = ring_world_built } # Ok in ring world systems.
+								is_artificial = yes
+								has_orbital_station = yes
+								is_asteroid = yes
+								is_moon = yes
+								is_star = yes
+							}
+						}
+						set_planet_flag = has_megastructure
+						save_event_target_as = habitat_site
+					}
+					spawn_planet = {
+						class = pc_habitat
+						location = event_target:habitat_site
+						orbit_location = yes
+                        orbit_angle_offset = 45
+                        orbit_distance_offset = 9.899
+                        size = 4
+                        has_ring = no
+
+						init_effect = {
+							set_name = {
+								key = HABITAT_PLANET_TITLE
+								variable_string = "[habitat_site.GetName]"
+							}
+							set_planet_entity = {
+								entity = "habitat_phase_01_entity"
+
+								random_list = {
+									1 = {
+										graphical_culture = mammalian_01
+										modifier = {
+											factor = 3
+											event_target:habitat_site = { has_planet_class = pc_tundra }
+										}
+									}
+									1 = {
+										graphical_culture = reptilian_01
+										modifier = {
+											factor = 3
+											event_target:habitat_site = { has_planet_class = pc_desert }
+										}
+									}
+									1 = {
+										graphical_culture = avian_01
+										modifier = {
+											factor = 3
+											event_target:habitat_site = { has_planet_class = pc_alpine }
+										}
+									}
+									1 = {
+										graphical_culture = arthropoid_01
+										modifier = {
+											factor = 3
+											event_target:habitat_site = { has_planet_class = pc_arid }
+										}
+									}
+									1 = {
+										graphical_culture = molluscoid_01
+										#modifier = {
+										#	factor = 3
+										#	event_target:habitat_site = { has_planet_class = pc_savannah }
+										#}
+									}
+									1 = {
+										graphical_culture = fungoid_01
+										modifier = {
+											factor = 3
+											event_target:habitat_site = { has_planet_class = pc_tropical }
+										}
+									}
+									1 = {
+										graphical_culture = plantoid_01
+										modifier = {
+											factor = 0
+											has_plantoids = no
+										}
+									}
+									1 = {
+										graphical_culture = humanoid_01
+										modifier = {
+											factor = 0
+											has_humanoids = no
+										}
+										modifier = {
+											factor = 3
+											event_target:habitat_site = { has_planet_class = pc_continental }
+										}
+									}
+									1 = {
+										graphical_culture = lithoid_01
+										modifier = {
+											factor = 0
+											has_lithoids = no
+										}
+									}
+									1 = {
+										graphical_culture = necroid_01
+										modifier = {
+											factor = 0
+											has_necroids = no
+										}
+									}
+									1 = {
+										graphical_culture = aquatic_01
+										#random_list = {
+										#	1 = {
+										#		add_modifier = {
+										#			modifier = flooded_habitat
+										#			days = -1
+										#		}
+										#	}
+										#	1 = {}
+										#}
+										modifier = {
+											factor = 0
+											has_aquatics = no
+										}
+										modifier = {
+											factor = 3
+											event_target:habitat_site = { has_planet_class = pc_ocean }
+										}
+									}
+									1 = {
+										graphical_culture = toxoid_01
+										modifier = {
+											factor = 0
+											has_toxoids = no
+										}
+										modifier = {
+											factor = 3
+											OR = {
+												event_target:habitat_site = { has_planet_class = pc_gas_giant }
+												event_target:habitat_site = { has_planet_class = pc_toxic }
+											}
+										}
+									}
+								}
+							}
+							clear_blockers = yes
+
+							set_planet_flag = megastructure
+							set_planet_flag = habitat
+
+							# ADD BLOCKERS
+							while = {
+								count = 3
+								add_deposit = d_corridor_clutter
+							}
+
+							# SET HABITAT TYPE
+							if = {
+								limit = {
+									event_target:habitat_site = {
+										OR = {
+											has_deposit_for = shipclass_research_station
+											has_deposit = d_zro_deposit_1
+											has_deposit = d_zro_deposit_2
+											has_deposit = d_zro_deposit_3
+											has_deposit = d_zro_deposit_4
+											has_deposit = d_zro_deposit_5
+											has_deposit = d_dark_matter_deposit_1
+											has_deposit = d_dark_matter_deposit_2
+											has_deposit = d_dark_matter_deposit_3
+											has_deposit = d_dark_matter_deposit_10
+											has_deposit = d_living_metal_deposit
+											has_deposit = d_nanites_deposit
+										}
+									}
+								}
+								set_planet_flag = research_habitat
+							} else_if = {
+								limit = {
+									event_target:habitat_site = {
+										OR = {
+											has_deposit = d_minerals_1
+											has_deposit = d_minerals_2
+											has_deposit = d_minerals_3
+											has_deposit = d_minerals_4
+											has_deposit = d_minerals_5
+											has_deposit = d_minerals_6
+											has_deposit = d_minerals_7
+											has_deposit = d_minerals_8
+											has_deposit = d_minerals_9
+											has_deposit = d_minerals_10
+											has_deposit = d_alloys_1
+											has_deposit = d_alloys_2
+											has_deposit = d_alloys_3
+											has_deposit = d_alloys_4
+											has_deposit = d_alloys_5
+											has_deposit = d_alloys_10
+											has_deposit = d_alloys_25
+										}
+									}
+								}
+								set_planet_flag = mining_habitat
+							} else_if = {
+								limit = {
+									event_target:habitat_site = {
+										OR = {
+											has_deposit = d_energy_1
+											has_deposit = d_energy_2
+											has_deposit = d_energy_3
+											has_deposit = d_energy_4
+											has_deposit = d_energy_5
+											has_deposit = d_energy_6
+											has_deposit = d_energy_7
+											has_deposit = d_energy_8
+											has_deposit = d_energy_9
+											has_deposit = d_energy_10
+										}
+									}
+								}
+								set_planet_flag = energy_habitat
+							}
+
+							# Add special jobs
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_exotic_gases_1 }
+								}
+								add_deposit = d_hab_gas_1
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_exotic_gases_2 }
+								}
+								add_deposit = d_hab_gas_2
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_exotic_gases_3 }
+								}
+								add_deposit = d_hab_gas_3
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_exotic_gases_4 }
+								}
+								add_deposit = d_hab_gas_4
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_exotic_gases_5 }
+								}
+								add_deposit = d_hab_gas_5
+							}
+
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_rare_crystals_1 }
+								}
+								add_deposit = d_hab_crystal_1
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_rare_crystals_2 }
+								}
+								add_deposit = d_hab_crystal_2
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_rare_crystals_3 }
+								}
+								add_deposit = d_hab_crystal_3
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_rare_crystals_4 }
+								}
+								add_deposit = d_hab_crystal_4
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_rare_crystals_5 }
+								}
+								add_deposit = d_hab_crystal_5
+							}
+
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_volatile_motes_1 }
+								}
+								add_deposit = d_hab_mote_1
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_volatile_motes_2 }
+								}
+								add_deposit = d_hab_mote_2
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_volatile_motes_3 }
+								}
+								add_deposit = d_hab_mote_3
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_volatile_motes_4 }
+								}
+								add_deposit = d_hab_mote_4
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_volatile_motes_5 }
+								}
+								add_deposit = d_hab_mote_5
+							}
+
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_zro_deposit_1 }
+								}
+								add_deposit = d_hab_zro_1
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_zro_deposit_2 }
+								}
+								add_deposit = d_hab_zro_2
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_zro_deposit_3 }
+								}
+								add_deposit = d_hab_zro_3
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_zro_deposit_4 }
+								}
+								add_deposit = d_hab_zro_4
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_zro_deposit_5 }
+								}
+								add_deposit = d_hab_zro_5
+							}
+
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_dark_matter_deposit_1 }
+								}
+								add_deposit = d_hab_dark_matter_1
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_dark_matter_deposit_2 }
+								}
+								add_deposit = d_hab_dark_matter_2
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_dark_matter_deposit_3 }
+								}
+								add_deposit = d_hab_dark_matter_3
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_dark_matter_deposit_10 }
+								}
+								add_deposit = d_hab_dark_matter_10
+							}
+
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_living_metal_deposit }
+								}
+								add_deposit = d_hab_living_metal_1
+							}
+
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_alloys_1 }
+								}
+								add_deposit = d_hab_alloy_1
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_alloys_2 }
+								}
+								add_deposit = d_hab_alloy_2
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_alloys_3 }
+								}
+								add_deposit = d_hab_alloy_3
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_alloys_4 }
+								}
+								add_deposit = d_hab_alloy_4
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_alloys_5 }
+								}
+								add_deposit = d_hab_alloy_5
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_alloys_10 }
+								}
+								add_deposit = d_hab_alloy_10
+							}
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_alloys_25 }
+								}
+								add_deposit = d_hab_alloy_25
+							}
+
+							if = {
+								limit = {
+									event_target:habitat_site = { has_deposit = d_nanites_deposit }
+								}
+								add_deposit = d_hab_nanites_1
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
