@@ -3,12 +3,15 @@
  NAME_Restored_Psi_Dreadnought: "Type 37"
 
  # The game has "requires_not_ring_world," but that's a typo PDX will likely fix at some point.
- requires_no_ring_world: "$TRIGGER_FAIL$Cannot build on Ring Worlds."
- requires_ten_pops: "$TRIGGER_FAIL$This world needs a defendable population of at least 10 Pops."
+ requires_no_ring_world:0 "$TRIGGER_FAIL$Cannot build on Ring Worlds."
+ requires_ten_pops:0 "$TRIGGER_FAIL$This world needs a defendable population of at least 10 Pops."
 
  # MEGASTRUCTURES
- HABITAT_PLANET_TITLE: "Habitat [habitat_site.GetName]"
+ HABITAT_PLANET_TITLE:0 "Habitat [habitat_site.GetName]"
 
- # DEPOSITS
- d_cluttered_corridor: "£blocker£ Cluttered Corridor"
- d_cluttered_corridor_desc: "This habitat section has housed many refugees and ne'er-do-wells, and become crowded with trash and other refuse over time. Extensive repair and clean-up is required to make it habitable."
+ ####################################
+ # Tile Blockers
+ ####################################
+
+ d_cluttered_corridor_blocker:0 "£blocker£ Cluttered Corridor"
+ d_cluttered_corridor_blocker_desc:0 "This habitat section has housed many refugees and ne'er-do-wells, and become crowded with trash and other refuse over time. Extensive repair and clean-up is required to make it habitable."
