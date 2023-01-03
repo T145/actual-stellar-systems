@@ -1,26 +1,20 @@
 An educated effort to bring more realism to the Stellaris experience! 🌌
 
 
-
-╔╦╗────────╔═╗─────╔╦╗──────
-║╩╠═╦═╦═╦╦╗║║╠═╦╦╦╗║║╠═╦═╦╦╗
-║╦║╬║╬║╬║║║║║║╩╣║║║╠╗║╩╣╬║╔╝
-╚╩╩╩╣╔╣╔╬╗║╚╩╩═╩══╝╚═╩═╩╩╩╝
-────╚╝╚╝╚═╝2023 ─────────────
-
-
 [img]https://raw.githubusercontent.com/quetzatcoatl/Stellaris-Moding-Assets/main/UI/workshop_menus/star_systems_introduction.png[/img]
 
 The primary goal of this mod is to provide more realism to Stellaris without compromising core game mechanics. It focuses on adjusting star systems, their components, and user interface elements related to them. Everything detailed below is mostly [b][i]planned[/i][/b] as the mod is in beta to give players time to test the features, give feedback, and perhaps make adjustments to other mods. Please reference the "Change Notes" tab to learn which features are currently implemented. Screenshots will be updated as more features get added.
 
 [h2]Recommended Companions[/h2]
 [list]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1995601384]Unofficial Patch[/url] (load ASS after)
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1524731904]Amazing Space Battles[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2864929604]Stellaris Texture Pack (STP) 2K/4K[/url] (load before)
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2864929604]Stellaris Texture Pack (STP) 2K/4K[/url] (load ASS after)
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2864419202]STP: Better Arcologies 2K/4K[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1712760331]StarNet AI[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2268189539]Aggressive Crisis Engine[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2815767345]Shrimp AI[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2145844864]Habitat AI Fix[/url]
 [/list]
 
 [hr][/hr]
