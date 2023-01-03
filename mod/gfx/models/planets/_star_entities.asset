@@ -180,19 +180,27 @@ entity = {
 	scale = 1.0
 }
 
-# entity = {
-# 	name = "black_hole_entity"
-# 	pdxmesh = "black_hole_mesh"
-# 	default_state = "idle"
-# 	state = { name = "idle" animation = "idle"	animation_speed = 0.2
-# 		event = { time = 0 particle = "black_hole_particle" trigger_once = yes keep_particle = yes }
-# 		event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
-# 	}
-# 	scale = 20.0
-# 	game_data = {
-# 		size = 170.0
-# 	}
-# }
+entity = {
+	name = "black_hole_entity"
+	pdxmesh = "black_hole_new_mesh"
+
+	scale = 1
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+		start_event = { node = "planet" light = "neutron_star_core" }
+	}
+
+	locator = { name = "planet" }
+	attach = { "planet" = "black_hole_rings_entity" }
+	attach = { "planet" = "black_hole_grav_lens_entity" }
+	attach = { "planet" = "black_hole_grav_animation_entity" }
+
+	game_data = {
+		size = 1.0
+		bloom_factor = 5
+	}
+}
 
 entity = { # ED
 	name = "ed_star_class_star_entity"
