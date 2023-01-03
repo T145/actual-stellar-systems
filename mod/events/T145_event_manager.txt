@@ -33,6 +33,7 @@ event = {
                     has_star_flag = ruined_nexus_system
                     has_star_flag = ruined_sentry_system
                     has_star_flag = ruined_ring_system
+					has_star_flag = vluur_system # added in federations
 				}
 				any_system_planet = {
 					NOR = {
