@@ -1,6 +1,6 @@
 # TODO: Add rare deposits?
 
-d_corridor_clutter_blocker = {
+d_cluttered_corridor_blocker = {
 	time = 360
 
 	is_for_colonizable = yes

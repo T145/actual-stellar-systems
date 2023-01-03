@@ -241,7 +241,7 @@ event = {
 							# ADD BLOCKERS
 							while = {
 								count = 5 # 3
-								add_deposit = d_corridor_clutter_blocker
+								add_deposit = d_cluttered_corridor_blocker
 							}
 
 							# SET HABITAT TYPE
