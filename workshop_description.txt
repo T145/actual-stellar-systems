@@ -3,7 +3,34 @@ An educated effort to bring more realism to the Stellaris experience! 🌌
 
 [img]https://raw.githubusercontent.com/quetzatcoatl/Stellaris-Moding-Assets/main/UI/workshop_menus/star_systems_introduction.png[/img]
 
-The primary goal of this mod is to provide more realism to Stellaris without compromising core game mechanics. It focuses on adjusting star systems, their components, and user interface elements related to them. Everything detailed below is mostly [b][i]planned[/i][/b] as the mod is in beta to give players time to test the features, give feedback, and perhaps make adjustments to other mods. Please reference the "Change Notes" tab to learn which features are currently implemented. Screenshots will be updated as more features get added.
+The primary goal of this mod is to provide more realism to Stellaris without compromising core game mechanics. It focuses on adjusting star systems, their components, and user interface elements related to them. Everything detailed here and in the guide is [i]mostly [b]planned[/b][/i] as the mod is in beta to give players time to test the features, give feedback, and perhaps make adjustments to other mods. Please reference the "Change Notes" tab to learn which features are currently implemented. Screenshots will be updated as more features get added.
+
+[h2]Project Scope[/h2]
+
+To clarify, this project is meant to edit entire star systems, what they contain, how they look, and galaxy generation with the purpose to promote more realism without harshly compromising vanilla mechanics. This includes the following:
+
+[list]
+[*]Stars
+[*]Star Modifiers
+[*]Planets, Asteroids, and the like
+[*]Planet Modifiers
+[*]Deposits, Blockers, and Features
+[*]Fauna
+[*]Ship Behaviour
+[*]Megastructures
+[*]Unique Systems
+[*]Orbital Stations
+[/list]
+
+Examples of what would be out-of-scope include:
+
+[list]
+[*]Species (Civics, Ethics, etc.)
+[*]Ships (Shipsets, Layouts, etc.)
+[*]Traditions and Ascension Perks
+[*]Technology
+[*]Buildings
+[/list]
 
 [h2]Recommended Companions[/h2]
 [list]

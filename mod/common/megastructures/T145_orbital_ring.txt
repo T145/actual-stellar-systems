@@ -67,21 +67,15 @@ orbital_ring = {
 					# has_planet_flag = has_megastructure
 					has_planet_flag = orbital_ring_planet # CUSTOM
 					has_planet_flag = ruined_orbital_ring_planet
-					# solar_system = { has_star_flag = ring_world_built } # Allow o-rings to be built in systems with ring worlds.
+					solar_system = { has_star_flag = ring_world_built }
 					is_artificial = yes # Can't be built around ring worlds or habitats.
 				}
 			}
 			if = {
-                # BALANCE: Remove limits on only AI, and make planets have at least 10 pops before getting an o-ring.
-                # This prevents spamming fortress systems in democratic empires to have a consist pop factory.
 				limit = {
 					from = { is_ai = yes }
 				}
-				num_pops >= 10 # 25
-			}
-            custom_tooltip = {
-				fail_text = "requires_10_pops"
-				num_pops >= 10
+				num_pops >= 25
 			}
 		}
 	}
@@ -116,9 +110,8 @@ orbital_ring = {
 		modifier = {
 			factor = 3
 			any_system_colony = {
-                # I want to see the AI taking advantage of o-rings!
-                # It's definitely worth defending those pops.
-				num_pops >= 25 # 50
+                # Encourage AI to build o-rings.
+				num_pops >= 30 # 50
 				NOT = { exists = orbital_defence }
 			}
 		}
@@ -147,22 +140,9 @@ orbital_ring = {
 		}
 		remove_megastructure = fromfrom
 
-		# NO SPAM
-		# from = { country_event = { id = tutorial.2121 } }
+		from = { country_event = { id = tutorial.2121 } }
 	}
 }
-
-# orbital_ring_ruined = {
-#   entity = "orbital_ring_01_destroyed_entity"
-# 	construction_entity = "orbital_ring_construction_entity"
-# 	portrait = "GFX_megastructure_construction_background"
-# 	place_entity_on_planet_plane = yes
-# 	entity_offset = { x = 0 y = 0 }
-# 	scales_with_planet = yes
-
-# 	potential = { always = no }
-# 	is_ruined_orbital_ring = yes
-# }
 
 orbital_ring_restored = {
 	entity = ""
@@ -255,7 +235,6 @@ orbital_ring_restored = {
 		}
 		remove_megastructure = fromfrom
 
-		# NO SPAM
-		# from = { country_event = { id = tutorial.2121 } }
+		from = { country_event = { id = tutorial.2121 } }
 	}
 }
