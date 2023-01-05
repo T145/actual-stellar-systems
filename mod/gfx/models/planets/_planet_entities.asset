@@ -6,7 +6,7 @@ entity = {
 	meshsettings = {
 		name = "planet_geosphereShape"
 		texture_diffuse = "gas_giant_07_diffuse.dds"
-		texture_normal = "gas_giant_02_normal.dds"
+		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 	}
 	default_state = "idle"
@@ -34,7 +34,7 @@ entity = {
 	meshsettings = {
 		name = "planet_geosphereShape"
 		texture_diffuse = "gas_giant_08_diffuse.dds"
-		texture_normal = "gas_giant_02_normal.dds"
+		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 	}
 	default_state = "idle"
@@ -61,7 +61,7 @@ entity = {
 	meshsettings = {
 		name = "planet_geosphereShape"
 		texture_diffuse = "gas_giant_09_diffuse.dds"
-		texture_normal = "gas_giant_02_normal.dds"
+		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 	}
 	default_state = "idle"
@@ -89,7 +89,7 @@ entity = {
 	meshsettings = {
 		name = "planet_geosphereShape"
 		texture_diffuse = "gas_giant_10_diffuse.dds"
-		texture_normal = "gas_giant_02_normal.dds"
+		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 	}
 	default_state = "idle"
@@ -117,7 +117,7 @@ entity = {
 	meshsettings = {
 		name = "planet_geosphereShape"
 		texture_diffuse = "gas_giant_11_diffuse.dds"
-		texture_normal = "gas_giant_02_normal.dds"
+		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 	}
 	default_state = "idle"
@@ -145,7 +145,7 @@ entity = {
 	meshsettings = {
 		name = "planet_geosphereShape"
 		texture_diffuse = "gas_giant_12_diffuse.dds"
-		texture_normal = "gas_giant_02_normal.dds"
+		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 	}
 	default_state = "idle"
@@ -173,7 +173,7 @@ entity = {
 	meshsettings = {
 		name = "planet_geosphereShape"
 		texture_diffuse = "gas_giant_13_diffuse.dds"
-		texture_normal = "gas_giant_02_normal.dds"
+		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 	}
 	default_state = "idle"
@@ -201,7 +201,7 @@ entity = {
 	meshsettings = {
 		name = "planet_geosphereShape"
 		texture_diffuse = "gas_giant_14_diffuse.dds"
-		texture_normal = "gas_giant_02_normal.dds"
+		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 	}
 	default_state = "idle"
@@ -229,7 +229,7 @@ entity = {
 	meshsettings = {
 		name = "planet_geosphereShape"
 		texture_diffuse = "gas_giant_15_diffuse.dds"
-		texture_normal = "gas_giant_02_normal.dds"
+		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 	}
 	default_state = "idle"
@@ -257,7 +257,7 @@ entity = {
 	meshsettings = {
 		name = "planet_geosphereShape"
 		texture_diffuse = "gas_giant_16_diffuse.dds"
-		texture_normal = "gas_giant_02_normal.dds"
+		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 	}
 	default_state = "idle"
@@ -285,7 +285,7 @@ entity = {
 	meshsettings = {
 		name = "planet_geosphereShape"
 		texture_diffuse = "gas_giant_17_diffuse.dds"
-		texture_normal = "gas_giant_02_normal.dds"
+		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 	}
 	default_state = "idle"
@@ -313,7 +313,7 @@ entity = {
 	meshsettings = {
 		name = "planet_geosphereShape"
 		texture_diffuse = "gas_giant_18_diffuse.dds"
-		texture_normal = "gas_giant_02_normal.dds"
+		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 	}
 	default_state = "idle"
@@ -341,7 +341,7 @@ entity = {
 	meshsettings = {
 		name = "planet_geosphereShape"
 		texture_diffuse = "gas_giant_19_diffuse.dds"
-		texture_normal = "gas_giant_02_normal.dds"
+		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 	}
 	default_state = "idle"
@@ -369,7 +369,7 @@ entity = {
 	meshsettings = {
 		name = "planet_geosphereShape"
 		texture_diffuse = "gas_giant_20_diffuse.dds"
-		texture_normal = "gas_giant_02_normal.dds"
+		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 	}
 	default_state = "idle"
