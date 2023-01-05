@@ -200,15 +200,15 @@ event = {
 										entity = "habitat_phase_01_entity"
 										graphical_culture = aquatic_01
 									}
-									#random_list = {
-									#	1 = {
-									#		add_modifier = {
-									#			modifier = flooded_habitat
-									#			days = -1
-									#		}
-									#	}
-									#	1 = {}
-									#}
+									random_list = {
+										99 = {}
+										1 = {
+											add_modifier = {
+												modifier = flooded_habitat
+												days = -1
+											}
+										}
+									}
 									modifier = {
 										factor = 0
 										has_aquatics = no
