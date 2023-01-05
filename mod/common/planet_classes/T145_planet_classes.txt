@@ -11,7 +11,7 @@ pc_molten = {
 
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 
 	min_distance_from_sun = 0
 	max_distance_from_sun = 60
@@ -35,7 +35,7 @@ pc_barren = {
 
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 
 	min_distance_from_sun = 40
 	max_distance_from_sun = 200
@@ -59,7 +59,7 @@ pc_barren_cold = {
 
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 
 	min_distance_from_sun = 40
 	max_distance_from_sun = 200
@@ -83,7 +83,7 @@ pc_frozen = {
 
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 
 	min_distance_from_sun = 120
 	max_distance_from_sun = 1000
@@ -107,7 +107,7 @@ pc_broken = {
 
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 
 	spawn_odds = 0
 
@@ -127,7 +127,7 @@ pc_shattered = {
 
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 
 	spawn_odds = 0
 
@@ -149,7 +149,7 @@ pc_shattered_2 = {
 
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 
 	spawn_odds = 0
 
@@ -176,7 +176,7 @@ pc_machine = {
 
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 
 	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.dds"
 
@@ -219,7 +219,7 @@ pc_machine_broken = { #Similar concept to pc_ai, but not bound to Contingency
 
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 
 	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.dds"
 
@@ -247,7 +247,7 @@ pc_ai = {
 
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 
 	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.dds"
 
@@ -286,7 +286,7 @@ pc_cybrex = {
 	fixed_entity_scale = yes
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
 	extra_orbit_size = 0
 	extra_planet_count = 0
@@ -318,7 +318,7 @@ pc_ringworld_habitable = {
 	fixed_entity_scale = yes
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 	show_city = yes
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
 	extra_orbit_size = 0
@@ -354,7 +354,7 @@ pc_ringworld_habitable_damaged = {
 	fixed_entity_scale = yes
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
 	extra_orbit_size = 0
 	extra_planet_count = 0
@@ -376,7 +376,7 @@ pc_ringworld_tech = {
 	fixed_entity_scale = yes
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
 	extra_orbit_size = 0
 	extra_planet_count = 0
@@ -400,7 +400,7 @@ pc_ringworld_tech_damaged = {
 	fixed_entity_scale = yes
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
 	extra_orbit_size = 0
 	extra_planet_count = 0
@@ -424,7 +424,7 @@ pc_ringworld_seam = {
 	fixed_entity_scale = yes
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
 	extra_orbit_size = 0
 	extra_planet_count = 0
@@ -448,7 +448,7 @@ pc_ringworld_seam_damaged = {
 	fixed_entity_scale = yes
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
 	extra_orbit_size = 0
 	extra_planet_count = 0
@@ -472,7 +472,7 @@ pc_shattered_ring_habitable = {
 	fixed_entity_scale = yes
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 	show_city = yes
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
 	extra_orbit_size = 0
@@ -506,7 +506,7 @@ pc_habitat = {
 	entity_face_object = no #disable rotation towards sun or planet we orbit around
 	atmosphere_color		= hsv { 0.0	0.0 0.0 }
 	atmosphere_intensity	= 0.0
-	atmosphere_width		= 0.5
+	atmosphere_width		= 0.0
 	show_city = no
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
 	extra_orbit_size = 0
