@@ -269,14 +269,14 @@ hostile_init_03 = {
 		#	factor = 0
 		#	NOT = { is_in_cluster = resource_cluster_1 }
 		#}
-		modifier = {
-			factor = 0
-			has_star_flag = empire_cluster
-		}
-		modifier = {
-			factor = 0
-			is_bottleneck_system = yes
-		}
+		#modifier = {
+		#	factor = 0
+		#	has_star_flag = empire_cluster
+		#}
+		#modifier = {
+		#	factor = 0
+		#	is_bottleneck_system = yes
+		#}
 	}
 
 	max_instances = 1
