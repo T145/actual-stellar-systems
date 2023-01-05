@@ -494,7 +494,7 @@ entity = {
 	pdxmesh = "planet_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "tundra_alpine_diffuse.dds"
+		texture_diffuse = "earth_tundra_diffuse.dds"
 		texture_normal = "continental_05_normals.dds"
 		texture_specular = "continental_05_spec.dds"
 	}

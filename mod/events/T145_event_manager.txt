@@ -572,87 +572,98 @@ event = {
 	}
 }
 
-event = {
+planet_event = {
 	id = t145.3
 	hide_window = yes
 	is_triggered_only = yes
 
+	trigger = {
+		has_planet_flag = planet_earth
+	}
+
 	immediate = {
-		every_planet = {
+		if = {
 			limit = {
-				has_planet_flag = planet_earth
+				is_planet_class = pc_alpine
 			}
-			if = {
-				limit = {
-					is_planet_class = pc_alpine
-				}
-				set_planet_entity = {
-					entity = "alpine_planet_earth_entity"
-				}
-			} else_if = {
-				limit = {
-					is_planet_class = pc_arctic
-				}
-				set_planet_entity = {
-					entity = "arctic_planet_earth_entity"
-				}
-			} else_if = {
-				limit = {
-					is_planet_class = pc_arid
-				}
-				set_planet_entity = {
-					entity = "arid_planet_earth_entity"
-				}
-			} else_if = {
-				limit = {
-					is_planet_class = pc_desert
-				}
-				set_planet_entity = {
-					entity = "desert_planet_earth_entity"
-				}
-			} else_if = {
-				limit = {
-					is_planet_class = pc_gaia
-				}
-				set_planet_entity = {
-					entity = "gaia_planet_earth_entity"
-				}
-			} else_if = {
-				limit = {
-					is_planet_class = pc_nuked
-				}
-				set_planet_entity = {
-					entity = "nuked_planet_earth_entity"
-				}
-			} else_if = {
-				limit = {
-					is_planet_class = pc_ocean
-				}
-				set_planet_entity = {
-					entity = "ocean_planet_earth_entity"
-				}
-			} else_if = {
-				limit = {
-					is_planet_class = pc_savannah
-				}
-				set_planet_entity = {
-					entity = "savannah_planet_earth_entity"
-				}
-			} else_if = {
-				limit = {
-					is_planet_class = pc_tropical
-				}
-				set_planet_entity = {
-					entity = "tropical_planet_earth_entity"
-				}
-			} else_if = {
-				limit = {
-					is_planet_class = pc_tundra
-				}
-				set_planet_entity = {
-					entity = "tundra_planet_earth_entity"
-				}
+			set_planet_entity = {
+				entity = "alpine_planet_earth_entity"
 			}
+		} else_if = {
+			limit = {
+				is_planet_class = pc_arctic
+			}
+			set_planet_entity = {
+				entity = "arctic_planet_earth_entity"
+			}
+		} else_if = {
+			limit = {
+				is_planet_class = pc_arid
+			}
+			set_planet_entity = {
+				entity = "arid_planet_earth_entity"
+			}
+		} else_if = {
+			limit = {
+				is_planet_class = pc_desert
+			}
+			set_planet_entity = {
+				entity = "desert_planet_earth_entity"
+			}
+		} else_if = {
+			limit = {
+				is_planet_class = pc_gaia
+			}
+			set_planet_entity = {
+				entity = "gaia_planet_earth_entity"
+			}
+		} else_if = {
+			limit = {
+				is_planet_class = pc_nuked
+			}
+			set_planet_entity = {
+				entity = "nuked_planet_earth_entity"
+			}
+		} else_if = {
+			limit = {
+				is_planet_class = pc_ocean
+			}
+			set_planet_entity = {
+				entity = "ocean_planet_earth_entity"
+			}
+		} else_if = {
+			limit = {
+				is_planet_class = pc_savannah
+			}
+			set_planet_entity = {
+				entity = "savannah_planet_earth_entity"
+			}
+		} else_if = {
+			limit = {
+				is_planet_class = pc_tropical
+			}
+			set_planet_entity = {
+				entity = "tropical_planet_earth_entity"
+			}
+		} else_if = {
+			limit = {
+				is_planet_class = pc_tundra
+			}
+			set_planet_entity = {
+				entity = "tundra_planet_earth_entity"
+			}
+		}
+	}
+}
+
+country_event = {
+	id = t145.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_planet_within_border = {
+			planet_event = { id = t145.3 }
 		}
 	}
 }
