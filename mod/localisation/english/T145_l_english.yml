@@ -4,7 +4,6 @@
  # Megastructures
  ####################################
 
- requires_ten_pops:0 "$TRIGGER_FAIL$This world needs a defendable population of at least 10 Pops."
  HABITAT_PLANET_TITLE:0 "Habitat [habitat_site.GetName]"
 
  ####################################
