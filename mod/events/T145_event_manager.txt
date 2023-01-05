@@ -80,6 +80,10 @@ event = {
                         size = 6 # 4
                         has_ring = no
 
+						# By having the OG mod leaving the planet size at 6,
+						# it technically qualifies as being an advanced habitat.
+						#set_planet_flag = advanced_habitat
+
 						init_effect = {
 							set_name = {
 								key = HABITAT_PLANET_TITLE
@@ -87,7 +91,7 @@ event = {
 							}
 
 							random_list = {
-								1 = {
+								2 = {
 									set_planet_entity = {
 										entity = "habitat_phase_01_entity"
 										graphical_culture = mammalian_01
@@ -97,7 +101,7 @@ event = {
 										event_target:habitat_site = { is_planet_class = pc_tundra }
 									}
 								}
-								1 = {
+								2 = {
 									set_planet_entity = {
 										entity = "habitat_phase_01_entity"
 										graphical_culture = reptilian_01
@@ -107,7 +111,7 @@ event = {
 										event_target:habitat_site = { is_planet_class = pc_desert }
 									}
 								}
-								1 = {
+								2 = {
 									set_planet_entity = {
 										entity = "habitat_phase_01_entity"
 										graphical_culture = avian_01
@@ -117,7 +121,7 @@ event = {
 										event_target:habitat_site = { is_planet_class = pc_alpine }
 									}
 								}
-								1 = {
+								2 = {
 									set_planet_entity = {
 										entity = "habitat_phase_01_entity"
 										graphical_culture = arthropoid_01
@@ -127,7 +131,7 @@ event = {
 										event_target:habitat_site = { is_planet_class = pc_arid }
 									}
 								}
-								1 = {
+								2 = {
 									set_planet_entity = {
 										entity = "habitat_phase_01_entity"
 										graphical_culture = molluscoid_01
@@ -137,7 +141,7 @@ event = {
 									#	event_target:habitat_site = { is_planet_class = pc_savannah }
 									#}
 								}
-								1 = {
+								2 = {
 									set_planet_entity = {
 										entity = "habitat_phase_01_entity"
 										graphical_culture = fungoid_01
@@ -147,7 +151,7 @@ event = {
 										event_target:habitat_site = { is_planet_class = pc_tropical }
 									}
 								}
-								1 = {
+								2 = {
 									set_planet_entity = {
 										entity = "habitat_phase_01_entity"
 										graphical_culture = plantoid_01
@@ -157,7 +161,7 @@ event = {
 										has_plantoids = no
 									}
 								}
-								1 = {
+								2 = {
 									set_planet_entity = {
 										entity = "habitat_phase_01_entity"
 										graphical_culture = humanoid_01
@@ -171,7 +175,7 @@ event = {
 										event_target:habitat_site = { is_planet_class = pc_continental }
 									}
 								}
-								1 = {
+								2 = {
 									set_planet_entity = {
 										entity = "habitat_phase_01_entity"
 										graphical_culture = lithoid_01
@@ -181,7 +185,7 @@ event = {
 										has_lithoids = no
 									}
 								}
-								1 = {
+								2 = {
 									set_planet_entity = {
 										entity = "habitat_phase_01_entity"
 										graphical_culture = necroid_01
@@ -191,7 +195,7 @@ event = {
 										has_necroids = no
 									}
 								}
-								1 = {
+								2 = {
 									set_planet_entity = {
 										entity = "habitat_phase_01_entity"
 										graphical_culture = aquatic_01
@@ -214,7 +218,7 @@ event = {
 										event_target:habitat_site = { is_planet_class = pc_ocean }
 									}
 								}
-								1 = {
+								2 = {
 									set_planet_entity = {
 										entity = "habitat_phase_01_entity"
 										graphical_culture = toxoid_01
@@ -229,6 +233,16 @@ event = {
 											event_target:habitat_site = { is_planet_class = pc_gas_giant }
 											event_target:habitat_site = { is_planet_class = pc_toxic }
 										}
+									}
+								}
+								2 = {
+									set_planet_entity = {
+										entity = "habitat_phase_01_entity"
+										graphical_culture = nemesis_01
+									}
+									modifier = {
+										factor = 0
+										has_nemesis = no
 									}
 								}
 							}
