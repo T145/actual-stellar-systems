@@ -603,7 +603,7 @@ entity = {
 ##########
 entity = {
 	name = "continental_planet_mars_entity"
-	pdxmesh = "planet_non_clouded_mesh"
+	pdxmesh = "planet_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
 		texture_diffuse = "mars_continental_diffuse.dds"
@@ -1227,6 +1227,169 @@ entity = {
 		texture_diffuse = "poles_barren_2_diffuse.dds"
 		texture_normal = "poles_barren_2_normal.dds"
 		texture_specular = "poles_barren_2_specular.dds"
+	}
+	default_state = "idle"
+	playback_rate = -1	# Rotation is reversed
+	state = {
+		name = "idle"
+		animation = "idle"
+		time_offset = {
+			0
+			100
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class"
+			}
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class_02"
+			}
+		}
+	}
+}
+
+###########
+# COLD BARREN
+##########
+entity = {
+	name = "cold_barren_planet_04_entity"
+	pdxmesh = "planet_non_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "cold_barren_04_diffuse.dds"
+		texture_normal = "barren_03_normal.dds"
+		texture_specular = "barren_03_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "poles_barren_1_diffuse.dds"
+		texture_normal = "poles_barren_1_normal.dds"
+		texture_specular = "poles_barren_1_specular.dds"
+	}
+	default_state = "idle"
+	playback_rate = -1	# Rotation is reversed
+	state = {
+		name = "idle"
+		animation = "idle"
+		time_offset = {
+			0
+			100
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class"
+			}
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class_02"
+			}
+		}
+	}
+}
+
+entity = {
+	name = "cold_barren_planet_05_entity"
+	pdxmesh = "planet_non_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "cold_barren_05_diffuse.dds"
+		texture_normal = "barren_03_normal.dds"
+		texture_specular = "barren_03_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "poles_barren_1_diffuse.dds"
+		texture_normal = "poles_barren_1_normal.dds"
+		texture_specular = "poles_barren_1_specular.dds"
+	}
+	default_state = "idle"
+	playback_rate = -1	# Rotation is reversed
+	state = {
+		name = "idle"
+		animation = "idle"
+		time_offset = {
+			0
+			100
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class"
+			}
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class_02"
+			}
+		}
+	}
+}
+
+entity = {
+	name = "cold_barren_planet_06_entity"
+	pdxmesh = "planet_non_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "cold_barren_06_diffuse.dds"
+		texture_normal = "barren_03_normal.dds"
+		texture_specular = "barren_03_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "poles_barren_1_diffuse.dds"
+		texture_normal = "poles_barren_1_normal.dds"
+		texture_specular = "poles_barren_1_specular.dds"
+	}
+	default_state = "idle"
+	playback_rate = -1	# Rotation is reversed
+	state = {
+		name = "idle"
+		animation = "idle"
+		time_offset = {
+			0
+			100
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class"
+			}
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class_02"
+			}
+		}
+	}
+}
+
+entity = {
+	name = "cold_barren_planet_07_entity"
+	pdxmesh = "planet_non_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "cold_barren_07_diffuse.dds"
+		texture_normal = "barren_03_normal.dds"
+		texture_specular = "barren_03_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "poles_barren_1_diffuse.dds"
+		texture_normal = "poles_barren_1_normal.dds"
+		texture_specular = "poles_barren_1_specular.dds"
 	}
 	default_state = "idle"
 	playback_rate = -1	# Rotation is reversed
