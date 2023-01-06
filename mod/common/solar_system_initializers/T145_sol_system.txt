@@ -4,21 +4,13 @@
 
 sol_system_initializer = {
 	name = "NAME_Sol"
-
 	class = "sc_g"
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 145
+	flags = {
+		empire_home_system
+		sol_system
+		sol
 	}
-	asteroid_belt = {
-		type = icy_asteroid_belt
-		radius = 290
-	}
-
-	flags = { empire_home_system sol_system sol }
-
 	usage = custom_empire
-
 	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster
@@ -28,7 +20,14 @@ sol_system_initializer = {
 		}
 		generate_home_system_resources = yes
 	}
-
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 145
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 290
+	}
 	planet = {
 		name = "NAME_Sol"
 		class = "pc_g_star"
@@ -37,7 +36,6 @@ sol_system_initializer = {
 		size = 30
 		has_ring = no
 	}
-
 	planet = {
 		name = "NAME_Mercury"
 		class = "pc_molten"
@@ -46,7 +44,6 @@ sol_system_initializer = {
 		size = 10
 		has_ring = no
 	}
-
 	planet = {
 		name = "NAME_Venus"
 		class = "pc_toxic"
@@ -54,17 +51,17 @@ sol_system_initializer = {
 		orbit_angle = 125
 		size = 17
 		has_ring = no
-        flags = { planet_venus }
-
-        init_effect = {
-            save_global_event_target_as = sol_system_venus
-            add_modifier = {
-                modifier = "terraforming_candidate"
-                days = -1
-            }
-        }
+		flags = {
+			planet_venus
+		}
+		init_effect = {
+			save_global_event_target_as = sol_system_venus
+			add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
+			}
+		}
 	}
-
 	planet = {
 		name = "NAME_Earth"
 		class = "pc_continental"
@@ -76,14 +73,13 @@ sol_system_initializer = {
 		entity = "continental_planet_earth_entity"
 		deposit_blockers = none
 		modifiers = none
-		flags = { planet_earth }
-
+		flags = {
+			planet_earth
+		}
 		init_effect = {
 			save_global_event_target_as = sol_system_earth
-
 			prevent_anomaly = yes
 		}
-
 		moon = {
 			name = "NAME_Luna"
 			class = "pc_barren_cold"
@@ -94,7 +90,6 @@ sol_system_initializer = {
 			entity = "cold_barren_planet_luna_entity"
 		}
 	}
-
 	planet = {
 		name = "NAME_Mars"
 		class = "pc_barren"
@@ -103,17 +98,17 @@ sol_system_initializer = {
 		size = 13
 		has_ring = no
 		entity = "barren_planet_mars_entity"
-        flags = { planet_mars }
-
+		flags = {
+			planet_mars
+		}
 		init_effect = {
-            save_global_event_target_as = sol_system_mars
-            add_modifier = {
-                modifier = "terraforming_candidate"
-                days = -1
-            }
-        }
+			save_global_event_target_as = sol_system_mars
+			add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
+			}
+		}
 	}
-
 	planet = {
 		name = "NAME_1_Ceres"
 		class = "pc_asteroid"
@@ -122,7 +117,6 @@ sol_system_initializer = {
 		size = 5
 		has_ring = no
 	}
-
 	planet = {
 		name = "NAME_2_Pallas"
 		class = "pc_asteroid"
@@ -131,7 +125,6 @@ sol_system_initializer = {
 		size = 5
 		has_ring = no
 	}
-
 	planet = {
 		name = "NAME_3_Juno"
 		class = "pc_asteroid"
@@ -140,7 +133,6 @@ sol_system_initializer = {
 		size = 5
 		has_ring = no
 	}
-
 	planet = {
 		name = "NAME_4_Vesta"
 		class = "pc_asteroid"
@@ -149,7 +141,6 @@ sol_system_initializer = {
 		size = 5
 		has_ring = no
 	}
-
 	planet = {
 		name = "NAME_Jupiter"
 		class = "pc_gas_giant"
@@ -159,7 +150,6 @@ sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
 		change_orbit = 6
-
 		moon = {
 			name = "NAME_Io"
 			class = "pc_molten"
@@ -193,7 +183,6 @@ sol_system_initializer = {
 			has_ring = no
 		}
 	}
-
 	planet = {
 		name = "NAME_Saturn"
 		class = "pc_gas_giant"
@@ -203,7 +192,6 @@ sol_system_initializer = {
 		has_ring = yes
 		entity = "gas_giant_05_entity"
 		change_orbit = 7
-
 		moon = {
 			name = "NAME_Titan"
 			class = "pc_frozen"
@@ -213,7 +201,6 @@ sol_system_initializer = {
 			has_ring = no
 		}
 	}
-
 	planet = {
 		name = "NAME_Uranus"
 		class = "pc_gas_giant"
@@ -223,7 +210,6 @@ sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_03_entity"
 	}
-
 	planet = {
 		name = "NAME_Neptune"
 		class = "pc_gas_giant"
@@ -233,7 +219,6 @@ sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_02_entity"
 		change_orbit = 4
-
 		moon = {
 			name = "NAME_Triton"
 			class = "pc_frozen"
@@ -243,7 +228,6 @@ sol_system_initializer = {
 			has_ring = no
 		}
 	}
-
 	planet = {
 		name = "NAME_134340_Pluto"
 		class = "pc_asteroid"
@@ -252,7 +236,6 @@ sol_system_initializer = {
 		size = 5
 		has_ring = no
 	}
-
 	planet = {
 		name = "NAME_136472_Makemake"
 		class = "pc_ice_asteroid"
@@ -261,7 +244,6 @@ sol_system_initializer = {
 		size = 5
 		has_ring = no
 	}
-
 	planet = {
 		name = "NAME_136108_Haumea"
 		class = "pc_ice_asteroid"
@@ -270,7 +252,6 @@ sol_system_initializer = {
 		size = 5
 		has_ring = no
 	}
-
 	planet = {
 		name = "NAME_20000_Varuna"
 		class = "pc_ice_asteroid"
@@ -279,19 +260,31 @@ sol_system_initializer = {
 		size = 5
 		has_ring = no
 	}
-
 	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = @jumps }
+		hyperlane_jumps = {
+			min = 1
+			max = @jumps
+		}
 		initializer = "sol_neighbor_t1"
 	}
 	neighbor_system = {
-		trigger = { num_guaranteed_colonies >= 1 }
-		hyperlane_jumps = { min = 1 max = @jumps }
+		trigger = {
+			num_guaranteed_colonies >= 1
+		}
+		hyperlane_jumps = {
+			min = 1
+			max = @jumps
+		}
 		initializer = "sol_neighbor_t1_first_colony"
 	}
 	neighbor_system = {
-		trigger = { num_guaranteed_colonies = 0 }
-		hyperlane_jumps = { min = 1 max = @jumps }
+		trigger = {
+			num_guaranteed_colonies = 0
+		}
+		hyperlane_jumps = {
+			min = 1
+			max = @jumps
+		}
 		initializer = "sol_neighbor_t1_no_guaranteed_colony"
 	}
 }
