@@ -8,12 +8,14 @@ on_game_start = {
 
 on_terraforming_complete = {
 	events = {
-		t145.100
+		t145.110 # Venus
+		t145.111 # Earth
+		t145.112 # Mars
 	}
 }
 
 on_press_begin = {
 	events = {
-		t145.101
+		t145.100
 	}
 }

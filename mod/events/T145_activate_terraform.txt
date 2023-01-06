@@ -5,8 +5,46 @@
 
 namespace = t145
 
-planet_event = {
+country_event = {
 	id = t145.100
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		home_planet = {
+			has_planet_flag = planet_earth
+		}
+	}
+
+	immediate = {
+		every_planet_within_border = {
+			planet_event = { id = t145.111 } # Terraform Earth
+		}
+	}
+}
+
+planet_event = {
+	id = t145.110
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_planet_flag = planet_venus
+	}
+
+	immediate = {
+		switch = {
+			trigger = is_planet_class
+			pc_continental = {
+				set_planet_entity = { entity = "continental_planet_venus_entity" }
+			}
+			default = {}
+		}
+	}
+}
+
+planet_event = {
+	id = t145.111
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -47,24 +85,27 @@ planet_event = {
 			pc_tundra = {
 				set_planet_entity = { entity = "tundra_planet_earth_entity" }
 			}
+			default = {}
 		}
 	}
 }
 
-country_event = {
-	id = t145.101
+planet_event = {
+	id = t145.112
 	hide_window = yes
 	is_triggered_only = yes
 
 	trigger = {
-		home_planet = {
-			has_planet_flag = planet_earth
-		}
+		has_planet_flag = planet_mars
 	}
 
 	immediate = {
-		every_planet_within_border = {
-			planet_event = { id = t145.100 } # Terraform Earth
+		switch = {
+			trigger = is_planet_class
+			pc_continental = {
+				set_planet_entity = { entity = "continental_planet_mars_entity" }
+			}
+			default = {}
 		}
 	}
 }
