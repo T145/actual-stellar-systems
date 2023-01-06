@@ -1048,3 +1048,206 @@ entity = {
 	}
 	scale = 1.2
 }
+
+###########
+# BARREN
+##########
+entity = {
+	name = "barren_planet_05_entity"
+	pdxmesh = "planet_non_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "barren_05_diffuse.dds"
+		texture_normal = "barren_04_normal.dds"
+		texture_specular = "barren_04_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "poles_barren_2_diffuse.dds"
+		texture_normal = "poles_barren_2_normal.dds"
+		texture_specular = "poles_barren_2_specular.dds"
+	}
+	default_state = "idle"
+	playback_rate = -1	# Rotation is reversed
+	state = {
+		name = "idle"
+		animation = "idle"
+		time_offset = {
+			0
+			100
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class"
+			}
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class_02"
+			}
+		}
+	}
+}
+
+entity = {
+	name = "barren_planet_06_entity"
+	pdxmesh = "planet_non_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "barren_06_diffuse.dds"
+		texture_normal = "barren_04_normal.dds"
+		texture_specular = "barren_04_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "poles_barren_2_diffuse.dds"
+		texture_normal = "poles_barren_2_normal.dds"
+		texture_specular = "poles_barren_2_specular.dds"
+	}
+	default_state = "idle"
+	playback_rate = -1	# Rotation is reversed
+	state = {
+		name = "idle"
+		animation = "idle"
+		time_offset = {
+			0
+			100
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class"
+			}
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class_02"
+			}
+		}
+	}
+}
+
+entity = {
+	name = "barren_planet_07_entity"
+	pdxmesh = "planet_non_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "barren_07_diffuse.dds"
+		texture_normal = "barren_04_normal.dds"
+		texture_specular = "barren_04_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "poles_barren_2_diffuse.dds"
+		texture_normal = "poles_barren_2_normal.dds"
+		texture_specular = "poles_barren_2_specular.dds"
+	}
+	default_state = "idle"
+	playback_rate = -1	# Rotation is reversed
+	state = {
+		name = "idle"
+		animation = "idle"
+		time_offset = {
+			0
+			100
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class"
+			}
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class_02"
+			}
+		}
+	}
+}
+
+entity = {
+	name = "barren_planet_08_entity"
+	pdxmesh = "planet_non_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "barren_08_diffuse.dds"
+		texture_normal = "barren_04_normal.dds"
+		texture_specular = "barren_04_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "poles_barren_2_diffuse.dds"
+		texture_normal = "poles_barren_2_normal.dds"
+		texture_specular = "poles_barren_2_specular.dds"
+	}
+	default_state = "idle"
+	playback_rate = -1	# Rotation is reversed
+	state = {
+		name = "idle"
+		animation = "idle"
+		time_offset = {
+			0
+			100
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class"
+			}
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class_02"
+			}
+		}
+	}
+}
+
+entity = {
+	name = "barren_planet_09_entity"
+	pdxmesh = "planet_non_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "barren_09_diffuse.dds"
+		texture_normal = "barren_04_normal.dds"
+		texture_specular = "barren_04_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "poles_barren_2_diffuse.dds"
+		texture_normal = "poles_barren_2_normal.dds"
+		texture_specular = "poles_barren_2_specular.dds"
+	}
+	default_state = "idle"
+	playback_rate = -1	# Rotation is reversed
+	state = {
+		name = "idle"
+		animation = "idle"
+		time_offset = {
+			0
+			100
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class"
+			}
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class_02"
+			}
+		}
+	}
+}
