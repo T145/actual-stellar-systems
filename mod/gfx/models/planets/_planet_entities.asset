@@ -8,7 +8,7 @@ entity = {
 		name = "planet_geosphereShape"
 		texture_diffuse = "venus_continental_diffuse.dds"
 		texture_normal = "continental_05_normals.dds"
-		texture_specular = "venus_continental_specular.dds"
+		texture_specular = "venus_continental_spec.dds"
 	}
 	##pole texture override
 	meshsettings = {
@@ -608,7 +608,7 @@ entity = {
 		name = "planet_geosphereShape"
 		texture_diffuse = "mars_continental_diffuse.dds"
 		texture_normal = "continental_05_normals.dds"
-		texture_specular = "mars_continental_specular.dds"
+		texture_specular = "mars_continental_spec.dds"
 	}
 	##pole texture override
 	meshsettings = {
