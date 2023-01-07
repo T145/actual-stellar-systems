@@ -38,6 +38,7 @@ event = {
                     has_star_flag = ruined_nexus_system
                     has_star_flag = ruined_sentry_system
                     has_star_flag = ruined_ring_system
+					has_star_flag = primitive_system
 				}
 				any_system_planet = {
 					NOR = {
@@ -253,7 +254,6 @@ event = {
 							}
 
 							clear_blockers = yes
-
 							set_planet_flag = megastructure
 
 							random_list = {
