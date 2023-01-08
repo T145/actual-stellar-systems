@@ -57,7 +57,7 @@ sol_system_initializer = {
 		init_effect = {
 			save_global_event_target_as = sol_system_venus
 			add_modifier = {
-				modifier = "terraforming_candidate"
+				modifier = toxic_terraforming_candidate
 				days = -1
 			}
 		}
