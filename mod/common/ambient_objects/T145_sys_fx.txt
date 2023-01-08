@@ -1,0 +1,7 @@
+# Space Storm 2
+ambient_object = {
+	name = "space_storm_3"
+	entity = "space_storm_3_entity"
+	selectable = no
+	show_name = no
+}

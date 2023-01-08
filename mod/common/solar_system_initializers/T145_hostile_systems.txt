@@ -1549,6 +1549,7 @@ hostile_init_15 = {
 }
 
 # Tiyanki Spawn System
+# Changing this rather than through an event b/c the game short-circuits when creating new home fleets.
 hostile_init_16 = {
 	class = "rl_standard_stars"
 	name = "NAME_Tiyana_Vek"
@@ -1579,7 +1580,7 @@ hostile_init_16 = {
 			clear_deposits = yes
 			add_deposit = d_physics_6
 			create_ambient_object = {
-				type = "space_storm_2"
+				type = "space_storm_3"
 				location = this
 			}
 			last_created_ambient_object = {
@@ -1612,8 +1613,8 @@ hostile_init_16 = {
 	planet = {
 		class = "pc_gas_giant"
 		name = "NAME_Surribzha"
-		orbit_distance = 0
-		orbit_angle = 85
+		orbit_distance = 75 # 0
+		orbit_angle = 120 # 85
 		size = 25
 		has_ring = yes
 		flags = { tiyanki_giant2 }
@@ -1629,8 +1630,8 @@ hostile_init_16 = {
 	planet = {
 		class = "pc_gas_giant"
 		name = "NAME_Yllarv"
-		orbit_distance = 0
-		orbit_angle = 95
+		orbit_distance = 105 # 0
+		orbit_angle = 215 # 95
 		size = 35
 		has_ring = no
 		flags = { tiyanki_giant3 }
@@ -1646,8 +1647,8 @@ hostile_init_16 = {
 	planet = {
 		class = "pc_gas_giant"
 		name = "NAME_Khetzhavu"
-		orbit_distance = 0
-		orbit_angle = 90
+		orbit_distance = 135 # 0
+		orbit_angle = 305 # 90
 		size = 31
 		has_ring = no
 		flags = { tiyanki_giant4 }

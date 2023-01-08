@@ -6,6 +6,12 @@ on_game_start = {
 	}
 }
 
+on_monthly_pulse = {
+	events = {
+		t145.10
+	}
+}
+
 on_terraforming_complete = {
 	events = {
 		t145.110 # Venus
