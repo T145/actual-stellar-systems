@@ -1,13 +1,24 @@
 NShip = {
-	FLEET_BASE_FORMATION_SCALE = 8.0	# 3.0
+	FLEET_BASE_FORMATION_SCALE = 8	# 3.0
+}
+
+NCamera = {
+	FOCUSED_MIN_ZOOM_BASE = 10	# 20
+	SYSTEM_SPACE_SCALE_MULT = 16	# 10.0
+	SYSTEM_MIN_PITCH = 10	# 20.0	# in degrees
 }
 
 NGraphics = {
 	# Better Rings setting
-	# Makes the original value positive
-	PLANET_RING_TILT_FROM_SUN = 0.16
+	PLANET_RING_TILT_FROM_SUN = 0.16 # -0.16
 
 	# Allows more 3D ship spacing
-	SHIP_RANDOM_HEIGHT_OFFSET = 60.0	# 15.0
-	STRIKE_CRAFT_HEIGHT_RANDOM = 20.0	# 5.0
+	SHIP_RANDOM_HEIGHT_OFFSET = 60	# 15.0
+	STRIKE_CRAFT_HEIGHT_RANDOM = 20	# 5.0
+	MOON_SCALE = 0.5	# 0.7
+}
+
+NGameplay = {
+	PLANET_ORBIT_DISTANCE_MIN_SIZE = 20	# 10
+	PLANET_ORBIT_DISTANCE_SIZE_SCALE = 0.55 # 0.33	# extra orbit distance per planet size over PLANET_ORBIT_DISTANCE_MIN_SIZE
 }
