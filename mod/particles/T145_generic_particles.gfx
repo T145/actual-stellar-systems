@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxparticle = {
+		name = "magnetar_outburst_effect"
+		type = "magnetar_outburst_effect"
+		scale = 1.0
+	}
+}
