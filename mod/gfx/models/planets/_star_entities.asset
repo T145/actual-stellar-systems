@@ -108,7 +108,7 @@ entity = { # M
 
 entity = { # Magnetar
 	name = "neutron_star_entity"
-	pdxmesh = "magnetar_mesh"
+	pdxmesh = "neutron_star_mesh"
 
 	default_state = "idle"
 	state = { name = "idle" animation = "idle"
