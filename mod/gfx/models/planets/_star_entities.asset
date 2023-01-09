@@ -106,21 +106,6 @@ entity = { # M
 	scale = 1.0
 }
 
-entity = { # Magnetar
-	name = "neutron_star_entity"
-	pdxmesh = "neutron_star_mesh"
-
-	default_state = "idle"
-	state = { name = "idle" animation = "idle"
-		event = { time = 0.0 node = "planet" particle = "a_class_star_particle"  keep_particle = no trigger_once = yes sound = { soundeffect = "neutron_star_idle_hum" } }
-		start_event = { node = "planet" light = "neutron_star_core" }
-		event = { trigger_once = yes sound = { soundeffect = "space_ambient" } }
-	}
-	scale = 1.3
-	#game_data = { size = 175 }
-	attach = { "planet" = "neutron_outbursts_entity" }
-}
-
 entity = {
 	name = "neutron_outbursts_entity"
 	pdxmesh = "magnetar_outbursts_mesh"
@@ -137,6 +122,21 @@ entity = {
 		uv_animation_speed   = 0.5
 		uv_animation_direction  = { 0.75 1.0 }
 	}
+}
+
+entity = { # Magnetar
+	name = "neutron_star_entity"
+	pdxmesh = "neutron_star_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0.0 node = "planet" particle = "a_class_star_particle"  keep_particle = no trigger_once = yes sound = { soundeffect = "neutron_star_idle_hum" } }
+		start_event = { node = "planet" light = "neutron_star_core" }
+		event = { trigger_once = yes sound = { soundeffect = "space_ambient" } }
+	}
+	scale = 1.3
+	game_data = { size = 175 }
+	attach = { "planet" = "neutron_outbursts_entity" }
 }
 
 entity = {
