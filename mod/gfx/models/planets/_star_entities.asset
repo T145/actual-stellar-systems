@@ -108,12 +108,12 @@ entity = { # M
 
 entity = {
 	name = "neutron_outbursts_entity"
-	pdxmesh = "magnetar_outbursts_mesh"
+	pdxmesh = "neutron_outbursts_mesh"
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0.0 node = "polar_effect_1" particle = "magnetar_outburst_effect"  keep_particle = no trigger_once = yes }
-		event = { time = 0.0 node = "polar_effect_2" particle = "magnetar_outburst_effect"  keep_particle = no trigger_once = yes }
+		event = { time = 0.0 node = "polar_effect_1" particle = "neutron_outburst_effect"  keep_particle = no trigger_once = yes }
+		event = { time = 0.0 node = "polar_effect_2" particle = "neutron_outburst_effect"  keep_particle = no trigger_once = yes }
 	}
 
 	scale = 1.4
@@ -124,7 +124,7 @@ entity = {
 	}
 }
 
-entity = { # Magnetar
+entity = {
 	name = "neutron_star_entity"
 	pdxmesh = "neutron_star_mesh"
 
