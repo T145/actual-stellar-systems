@@ -1,7 +1,16 @@
+random_list = {
+	name = "rl_primitive_stars"
+	stars = {
+		"sc_f"
+		"sc_g"
+		"sc_k"
+	}
+}
+
 # Primitive Civilizations
 special_init_02 = {
     # Changed from rl_standard_stars to reflect star class changes
-	class = "rl_starting_stars"
+	class = "rl_primitive_stars"
 
 	usage = misc_system_init
 	usage_odds = 1.5
