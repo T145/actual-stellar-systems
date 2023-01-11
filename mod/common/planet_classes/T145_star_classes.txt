@@ -2,7 +2,34 @@
 # Stars
 # ###########
 
-# TODO: Define star sizes via entity_scale
+pc_black_hole = {
+	entity = "black_hole_entity"
+	entity_scale = 20.0
+	icon = GFX_planet_type_black_hole
+
+	atmosphere_color		= hsv { 0.075 0.13 1.5 }
+	atmosphere_intensity	= 1.0
+	atmosphere_width		= 1.0
+
+	star = yes
+
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+
+	spawn_odds = 0
+
+	extra_orbit_size = 0
+	extra_planet_count = 0
+
+	chance_of_ring = 0
+
+	planet_size = {
+		min = 8 # 20
+		max = 42 # 35
+	}
+
+	colonizable = no
+}
 
 pc_g_star = {
 	entity = "g_star_class_star_entity"
