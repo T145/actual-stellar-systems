@@ -6,10 +6,10 @@ entity = {
 
 	default_state = "explode"
 	state = { name = "explode" state_time = 30 looping = no
-	#next_state = "wait"
-	#	event = { time = 0.0 	particle = "star_explosion_1_effect"  keep_particle = yes trigger_once = no }
+		#next_state = "wait"
+		event = { time = 0.0 	particle = "star_explosion_1_effect"  keep_particle = yes trigger_once = no }
 		event = { time = 0.0 	particle = "star_explosion_2_effect"  keep_particle = yes trigger_once = no }
-	#	event = { time = 0.0 	particle = "star_explosion_shockwave_effect"  keep_particle = yes trigger_once = no }
+		event = { time = 0.0 	particle = "star_explosion_shockwave_effect"  keep_particle = yes trigger_once = no }
 		event = { trigger_once = yes sound = { soundeffect = "sfx_star_eater_weapon_hit" } }
 		event = { trigger_once = yes sound = { soundeffect = "sfx_star_eater_weapon_hit_distance" } }
 	}
