@@ -379,3 +379,88 @@ light = {
 
 	position = { x = 0 y = 0 z = 0 }
 }
+
+###########
+# REAL SPACE
+##########
+light = {
+	name = "c_class_star_core"
+
+	color = {
+		r = { 1 }
+		g = { 0.15 }
+		b = { 0.5 }
+	}
+
+	intensity = 2
+	radius = 1000000
+	falloff = 0.5
+
+	position = { x = 0 y = 0 z = 0 }
+
+}
+
+light = {
+	name = "ttr_class_star_core"
+
+	color = {
+		r = { 1 }
+		g = { 0.5 }
+		b = { 0.5 }
+	}
+
+	intensity = 2
+	radius = 1000000
+	falloff = 0.5
+
+	position = { x = 0 y = 0 z = 0 }
+
+}
+
+light = {
+	name = "wg_class_star_core"
+
+	color = {
+		r = { 0.75 }
+		g = { 1 }
+		b = { 0.75 }
+	}
+
+	intensity = 2
+	radius = 1000000
+	falloff = 0.5
+
+	position = { x = 0 y = 0 z = 0 }
+}
+
+light = {
+	name = "wp_class_star_core"
+
+	color = {
+		r = { 0.7 }
+		g = { 0.35 }
+		b = { 1 }
+	}
+
+	intensity = 2
+	radius = 1000000
+	falloff = 0.5
+
+	position = { x = 0 y = 0 z = 0 }
+}
+
+light = {
+	name = "dying_blue_star_core"
+
+	color = {
+		r = { 0.5 }
+		g = { 0.85 }
+		b = { 1.0 }
+	}
+
+	intensity = 1.5
+	radius = 1000000
+	falloff = 0.5
+
+	position = { x = 0 y = 0 z = 0 }
+}
