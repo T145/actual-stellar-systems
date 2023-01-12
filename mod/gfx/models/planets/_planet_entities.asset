@@ -599,8 +599,92 @@ entity = {
 }
 
 ###########
+# LUNA
+##########
+entity = {
+	name = "cold_barren_planet_luna_entity"
+	pdxmesh = "planet_non_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "luna_01_diffuse.dds"
+		texture_normal = "cold_barren_04_normal.dds"
+		texture_specular = "cold_barren_04_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "luna_poles_barren_2_diffuse.dds"
+		texture_normal = "luna_poles_barren_2_normal.dds"
+		texture_specular = "cold_barren_04_specular.dds"
+	}
+	default_state = "idle"
+	playback_rate = 1	# Animation speed 0 - The Moon is tidally locked to Earth
+	state = {
+		name = "idle"
+		animation = "idle"
+		time_offset = {
+			15
+			0
+		}
+		animation_speed = 0
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class"
+			}
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class_02"
+			}
+		}
+	}
+}
+
+###########
 # MARS
 ##########
+entity = {
+	name = "barren_planet_mars_entity"
+	pdxmesh = "planet_non_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "mars_01_diffuse.dds"
+		texture_normal = "barren_04_normal.dds"
+		texture_specular = "barren_04_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "poles_barren_1_diffuse.dds"
+		texture_normal = "poles_barren_1_normal.dds"
+		texture_specular = "poles_barren_1_specular.dds"
+	}
+	default_state = "idle"
+	playback_rate = -1	# Rotation is reversed
+	state = {
+		name = "idle"
+		animation = "idle"
+		time_offset = {
+			0
+			100
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class"
+			}
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "amb_planet_class_02"
+			}
+		}
+	}
+}
+
 entity = {
 	name = "continental_planet_mars_entity"
 	pdxmesh = "planet_clouded_mesh"
@@ -653,6 +737,37 @@ entity = {
 			}
 		}
 	}
+}
+
+###########
+# JUPITER
+##########
+entity = {
+	name = "gas_giant_jupiter_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "jupiter_01_diffuse.dds"
+		texture_normal = "gas_giant_01_normal.dds"
+		texture_specular = "gas_giant_01_specular.dds"
+	}
+	default_state = "idle"
+	playback_rate = -1	# Rotation is reversed
+	state = {
+		name = "idle"
+		animation = "idle"
+		time_offset = {
+			0
+			100
+		}
+		start_event = {
+			trigger_once = yes
+			sound = {
+				soundeffect = "gas_giant_amb_hum"
+			}
+		}
+	}
+	scale = 1.2
 }
 
 ###########
