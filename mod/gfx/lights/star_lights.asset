@@ -192,12 +192,6 @@ light = {
 light = {
 	name = "tox_class_star"
 
-#	color = {
-#		r = { 1.0 }
-#		g = { 1.0 }
-#		b = { 1.0 }
-#	}
-
 	color = {
 		r = { 0.7 }
 		g = { 0.9 }

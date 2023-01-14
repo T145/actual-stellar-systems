@@ -1,0 +1,129 @@
+# Similar to an F class star
+light = {
+	name = "strange_star"
+
+	color = {
+		r = { 1.0 }
+		g = { 1.0 }
+		b = { 1.0 }
+	}
+
+	intensity = 0
+	radius = 1000000
+	falloff = 0.5
+
+	position = { x = 0 y = 2 z = 0 }
+}
+
+light = {
+	name = "strange_star_core"
+
+	color = {
+		r = { 0.82 }
+		g = { 0 }
+		b = { 0.41 }
+	}
+
+	intensity = 2.5
+	radius = 1000000
+	falloff = 0.5
+
+	position = { x = 0 y = 0 z = 0 }
+}
+
+# Similar to a black hole
+light = {
+	name = "dark_star"
+
+	color = {
+		r = { 0.9 }
+		g = { 0.9 }
+		b = { 0.9 }
+	}
+
+	intensity = 0
+	radius = 1000000
+	falloff = 0.5
+
+	position = { x = 0 y = 2 z = 0 }
+}
+
+light = {
+	name = "dark_star_core"
+
+	color = {
+		r = { 0.38 }
+		g = { 0 }
+		b = { 1 }
+	}
+
+	intensity = 1.5
+	radius = 1000000
+	falloff = 0.5
+
+	position = { x = 0 y = 0 z = 0 }
+}
+
+light = {
+	name = "black_star"
+
+	color = {
+		r = { 0.4 }
+		g = { 0.4 }
+		b = { 0.4 }
+	}
+
+	intensity = 0
+	radius = 1000000
+	falloff = 0.5
+
+	position = { x = 0 y = 2 z = 0 }
+}
+
+light = {
+	name = "black_star_core"
+
+	color = {
+		r = { 0.9 }
+		g = { 0.9 }
+		b = { 0.9 }
+	}
+
+	intensity = 2.0
+	radius = 1000000
+	falloff = 0.5
+
+	position = { x = 0 y = 0 z = 0 }
+}
+
+light = {
+	name = "white_hole"
+
+	color = {
+		r = { 1 }
+		g = { 1 }
+		b = { 1 }
+	}
+
+	intensity = 0
+	radius = 1000000
+	falloff = 0.5
+
+	position = { x = 0 y = 2 z = 0 }
+}
+
+light = {
+	name = "white_hole_core"
+
+	color = {
+		r = { 1 }
+		g = { 1 }
+		b = { 1 }
+	}
+
+	intensity = 2.5
+	radius = 1000000
+	falloff = 0.5
+
+	position = { x = 0 y = 0 z = 0 }
+}
