@@ -4,7 +4,7 @@ NShip = {
 
 NCamera = {
 	FOCUSED_MIN_ZOOM_BASE = 10	# 20
-	SYSTEM_SPACE_SCALE_MULT = 12	# 10.0 # 20 is too big
+	#SYSTEM_SPACE_SCALE_MULT = 12	# 10.0 # Adjusting this breaks ringworlds!
 	SYSTEM_MIN_PITCH = 10	# 20.0	# in degrees
 }
 
