@@ -12,6 +12,7 @@
 *.txt text
 *.json text
 ## Project specs
+*.reg text
 *.bash text
 *.pl text
 *.py text
