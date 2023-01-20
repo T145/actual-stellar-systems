@@ -11,6 +11,7 @@
 *.info text
 *.txt text
 *.json text
+*.svg text
 ## Project specs
 *.reg text
 *.bash text
@@ -57,7 +58,6 @@
 *.jpx binary
 *.jpm binary
 *.mj2 binary
-*.svg binary
 *.svgz binary
 *.ai binary
 *.eps binary
