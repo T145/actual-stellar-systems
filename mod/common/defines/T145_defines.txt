@@ -18,7 +18,7 @@ NCamera = {
 	ZOOM_STEPS_SHOW_FLEET_HEALTH_BARS 	= { 9 10 11 12 13 14 15 } # on which zoom steps per-fleet health bars should be shown
 
 	LEAVE_SYSTEM_ZOOM_STEP 			= 3 # Controls which zoom step is used after leaving system
-	ENTER_SYSTEM_ZOOM_STEP 			= 11 # Controls which zoom step is used after entering system
+	ENTER_SYSTEM_ZOOM_STEP 			= 16 # Controls which zoom step is used after entering system
 	SYSTEM_FOCUS_PLANET_STEP 		= 7 # Controls which zoom step to planet zoom to in a system
 }
 
