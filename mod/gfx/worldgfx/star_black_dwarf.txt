@@ -27,7 +27,7 @@ gfx_settings = {
 
 	# Shader settings
 	# Is affected by SPECULAR_INTENSITY_MULT
-	cubemap_intensity = 0.4#0.4
+	cubemap_intensity = 0.4 # 0.4
 
 	# Works for planets, nor for ships
 	# Planets ambient light
@@ -52,7 +52,7 @@ gfx_settings = {
 	cam_light_3_diffuse = hsv { 0.55 0.35 0.75 } # 0.5
 
 	# Rim light shader
-	rim_light_diffuse = hsv { 0.56 0.5 0.0}#0.25	#GOOD
+	rim_light_diffuse = hsv { 0.56 0.5 0.0} #0.25	#GOOD
 
 	light_hdr_range = 1.0
 	bright_threshold = 0.95		# used by both bloom and lens flare
@@ -69,7 +69,6 @@ gfx_settings = {
 	lens_flare_scale = 0.2					# Intencity
 	lens_flare_bias = -0.1					# Threshold
 	lens_flare_ghost_dispersal = 0.3		# Scattering
-	lens_flare_ghost_pow = 15.0
 	lens_flare_halo_width = 0.6				# Halo ring size
 	lens_flare_halo_pow = 0.2
 	lens_flare_distortion_factor = 1.5		# Chromatic abbaritions

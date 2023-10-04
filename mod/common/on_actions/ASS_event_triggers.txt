@@ -11,9 +11,3 @@ on_monthly_pulse = {
 		t145.10
 	}
 }
-
-on_press_begin = {
-	events = {
-		t145.100
-	}
-}
