@@ -1,5 +1,5 @@
 entity = {
-	name = "navigation_arrow_entity"
+	name = "t145_navigation_arrow_entity"
 	pdxmesh = "navigation_arrow_mesh"
 	scale = 15.0
 }
