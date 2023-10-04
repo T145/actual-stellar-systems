@@ -1,5 +1,6 @@
 NShip = {
-	FLEET_BASE_FORMATION_SCALE = 8	# 3.0
+	FLEET_BASE_FORMATION_SCALE 	= 6.0 # 8	# 3.0
+	FLEET_BASE_FORMATION_DIV	= 30
 }
 
 NCamera = {
@@ -27,8 +28,8 @@ NGraphics = {
 	PLANET_RING_TILT_FROM_SUN = 0.16 # -0.16
 
 	# Allows more 3D ship spacing
-	SHIP_RANDOM_HEIGHT_OFFSET = 60	# 15.0
-	STRIKE_CRAFT_HEIGHT_RANDOM = 20	# 5.0
+	SHIP_RANDOM_HEIGHT_OFFSET = 275 # 60	# 15.0
+	STRIKE_CRAFT_HEIGHT_RANDOM = 40 # 20	# 5.0
 	MOON_SCALE = 0.5	# 0.7
 
 	# NAVIGATION_ARROW_X values might require a game restart to push changes
