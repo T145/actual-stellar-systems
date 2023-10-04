@@ -5,7 +5,6 @@ hostile_init_01 = {
 	class = "rl_standard_stars"
 
 	usage = misc_system_init
-	#usage_odds = 2
 	usage_odds = {
 		base = 4
 		modifier = {
@@ -23,7 +22,7 @@ hostile_init_01 = {
 	}
 
 	max_instances = 1
-	flags = { hostile_system blue_system shield_system }
+	flags = { hostile_system blue_system shield_system space_critter_system }
 
 	planet = {
 		count = 1
@@ -125,7 +124,7 @@ hostile_init_02 = {
 		}
 	}
 
-	flags = { hostile_system blue2_system }
+	flags = { hostile_system blue2_system space_critter_system }
 
 	planet = {
 		count = 1
@@ -259,150 +258,151 @@ hostile_init_02 = {
 }
 
 # Crystal Entities - Green (Patrol)
+# NOTE: Effectively disabled before.
 hostile_init_03 = {
 	class = "rl_standard_stars"
 
 	usage = misc_system_init
 	usage_odds = {
-		base = 0 # 1
-		#modifier = {
-		#	factor = 0
-		#	NOT = { is_in_cluster = resource_cluster_1 }
-		#}
-		#modifier = {
-		#	factor = 0
-		#	has_star_flag = empire_cluster
-		#}
-		#modifier = {
-		#	factor = 0
-		#	is_bottleneck_system = yes
-		#}
+		base = 0
+		# modifier = {
+		# 	factor = 0
+		# 	NOT = { is_in_cluster = resource_cluster_1 }
+		# }
+		# modifier = {
+		# 	factor = 0
+		# 	has_star_flag = empire_cluster
+		# }
+		# modifier = {
+		# 	factor = 0
+		# 	is_bottleneck_system = yes
+		# }
 	}
 
-	max_instances = 1
+	max_instances = 0 # 1
 
-	flags = { hostile_system green_system }
+	# flags = { hostile_system green_system space_critter_system }
 
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 0
-		orbit_angle = 1
-		size = { min = 20 max = 30 }
-		has_ring = no
-	}
+	# planet = {
+	# 	count = 1
+	# 	class = star
+	# 	orbit_distance = 0
+	# 	orbit_angle = 1
+	# 	size = { min = 20 max = 30 }
+	# 	has_ring = no
+	# }
 
-	change_orbit = 45
+	# change_orbit = 45
 
-	planet = {
-		count = { min = 3 max = 10 }
-		orbit_distance = 20
-		orbit_angle = { min = 90 max = 270 }
+	# planet = {
+	# 	count = { min = 3 max = 10 }
+	# 	orbit_distance = 20
+	# 	orbit_angle = { min = 90 max = 270 }
 
-		change_orbit = @base_moon_distance
+	# 	change_orbit = @base_moon_distance
 
-		moon = {
-			count = { min = 0 max = 1 }
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = 5
-		}
-	}
+	# 	moon = {
+	# 		count = { min = 0 max = 1 }
+	# 		orbit_angle = { min = 90 max = 270 }
+	# 		orbit_distance = 5
+	# 	}
+	# }
 
-	init_effect = {
-		create_crystal_country = yes
-		random_system_planet = {
-			limit = {
-				is_star = no
-				is_moon = no
-			}
-			save_event_target_as = green_trigger_1
-		}
-		random_system_planet = {
-			limit = {
-				is_star = no
-				is_moon = no
-				NOT = {
-					is_same_value = event_target:green_trigger_1
-				}
-			}
-			save_event_target_as = green_trigger_2
-		}
-		random_system_planet = {
-			limit = {
-				is_star = no
-				is_moon = no
-				NOR = { # NOT ?
-					is_same_value = event_target:green_trigger_1
-					is_same_value = event_target:green_trigger_2
-				}
-			}
-			save_event_target_as = green_trigger_3
-		}
-		event_target:crystal_country = {
-			create_fleet = {
-				name = "NAME_Emerald_Roamers"
-				effect = {
-					set_owner = event_target:crystal_country
-					create_ship = {
-						name = ""
-						design = "NAME_Large_Crystal_Entity_Green"
-					}
-					while = {
-						count = 2
-						create_ship = {
-							name = ""
-							design = "NAME_Medium_Crystal_Entity_Green"
-						}
-					}
-					while = {
-						count = 8
-						create_ship = {
-							name = ""
-							design = "NAME_Small_Crystal_Entity_Green"
-						}
-					}
-					set_location = event_target:green_trigger_3
-					set_fleet_stance = aggressive
-					set_aggro_range_measure_from = self
-					set_aggro_range = 100
-					queue_actions = {
-						repeat = {
-							find_closest_planet = {
-								trigger = {
-									id = "greenC.1.trigger.1"
-									is_planet = event_target:green_trigger_1
-								}
-								found_planet = {
-									move_to = this
-									orbit_planet = THIS
-								}
-							}
-							find_closest_planet = {
-								trigger = {
-									id = "greenC.1.trigger.2"
-									is_planet = event_target:green_trigger_2
-								}
-								found_planet = {
-									move_to = this
-									orbit_planet = THIS
-								}
-							}
-							find_closest_planet = {
-								trigger = {
-									id = "greenC.1.trigger.3"
-									is_planet = event_target:green_trigger_3
-								}
-								found_planet = {
-									move_to = this
-									orbit_planet = THIS
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+	# init_effect = {
+	# 	create_crystal_country = yes
+	# 	random_system_planet = {
+	# 		limit = {
+	# 			is_star = no
+	# 			is_moon = no
+	# 		}
+	# 		save_event_target_as = green_trigger_1
+	# 	}
+	# 	random_system_planet = {
+	# 		limit = {
+	# 			is_star = no
+	# 			is_moon = no
+	# 			NOT = {
+	# 				is_same_value = event_target:green_trigger_1
+	# 			}
+	# 		}
+	# 		save_event_target_as = green_trigger_2
+	# 	}
+	# 	random_system_planet = {
+	# 		limit = {
+	# 			is_star = no
+	# 			is_moon = no
+	# 			NOR = {
+	# 				is_same_value = event_target:green_trigger_1
+	# 				is_same_value = event_target:green_trigger_2
+	# 			}
+	# 		}
+	# 		save_event_target_as = green_trigger_3
+	# 	}
+	# 	event_target:crystal_country = {
+	# 		create_fleet = {
+	# 			name = "NAME_Emerald_Roamers"
+	# 			effect = {
+	# 				set_owner = event_target:crystal_country
+	# 				create_ship = {
+	# 					name = ""
+	# 					design = "NAME_Large_Crystal_Entity_Green"
+	# 				}
+	# 				while = {
+	# 					count = 2
+	# 					create_ship = {
+	# 						name = ""
+	# 						design = "NAME_Medium_Crystal_Entity_Green"
+	# 					}
+	# 				}
+	# 				while = {
+	# 					count = 8
+	# 					create_ship = {
+	# 						name = ""
+	# 						design = "NAME_Small_Crystal_Entity_Green"
+	# 					}
+	# 				}
+	# 				set_location = event_target:green_trigger_3
+	# 				set_fleet_stance = aggressive
+	# 				set_aggro_range_measure_from = self
+	# 				set_aggro_range = 100
+	# 				queue_actions = {
+	# 					repeat = {
+	# 						find_closest_planet = {
+	# 							trigger = {
+	# 								id = "greenC.1.trigger.1"
+	# 								is_planet = event_target:green_trigger_1
+	# 							}
+	# 							found_planet = {
+	# 								move_to = this
+	# 								orbit_planet = THIS
+	# 							}
+	# 						}
+	# 						find_closest_planet = {
+	# 							trigger = {
+	# 								id = "greenC.1.trigger.2"
+	# 								is_planet = event_target:green_trigger_2
+	# 							}
+	# 							found_planet = {
+	# 								move_to = this
+	# 								orbit_planet = THIS
+	# 							}
+	# 						}
+	# 						find_closest_planet = {
+	# 							trigger = {
+	# 								id = "greenC.1.trigger.3"
+	# 								is_planet = event_target:green_trigger_3
+	# 							}
+	# 							found_planet = {
+	# 								move_to = this
+	# 								orbit_planet = THIS
+	# 							}
+	# 						}
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
 }
 
 # Crystal Entities - Green (Patrol) VARIATION
@@ -416,7 +416,7 @@ hostile_init_05 = {
 	usage_odds = {
 		base = 2
 		modifier = {
-			factor = 0.5 # 0
+			factor = 0.5
 			NOT = { is_in_cluster = resource_cluster_1 }
 		}
 		modifier = {
@@ -429,7 +429,7 @@ hostile_init_05 = {
 		}
 	}
 
-	flags = { hostile_system red_system }
+	flags = { hostile_system red_system space_critter_system }
 
 	planet = {
 		count = 1
@@ -629,7 +629,7 @@ hostile_init_06 = {
 	}
 
 	max_instances = 1
-	flags = { hostile_system red2_system }
+	flags = { hostile_system red2_system space_critter_system }
 
 	planet = {
 		count = 1
@@ -846,7 +846,6 @@ hostile_init_06 = {
 
 # Crystal Entities - Elites & Base
 hostile_init_07 = {
-
 	class = sc_pulsar
 
 	usage = misc_system_init
@@ -869,7 +868,7 @@ hostile_init_07 = {
 	max_instances = 1
 	spawn_chance = 100
 
-	flags = { hostile_system elite_system crystal_home_system }
+	flags = { hostile_system elite_system crystal_home_system space_critter_system }
 
 	planet = {
 		class = star
@@ -1189,7 +1188,7 @@ hostile_init_10 = {
 		}
 	}
 
-	flags = { hostile_system amoeba_1_system }
+	flags = { hostile_system amoeba_1_system space_critter_system }
 
 	planet = {
 		count = 1
@@ -1247,6 +1246,7 @@ hostile_init_10 = {
 						set_fleet_stance = aggressive
 						set_aggro_range_measure_from = self
 						set_aggro_range = 100
+						set_fleet_flag = is_garrison_fleet
 					}
 				}
 			}
@@ -1271,7 +1271,7 @@ hostile_init_10_small_amoeba_pack = {
 		}
 	}
 
-	flags = { hostile_system amoeba_2_system }
+	flags = { hostile_system amoeba_2_system space_critter_system }
 
 	planet = {
 		count = 1
@@ -1328,6 +1328,7 @@ hostile_init_10_small_amoeba_pack = {
 						set_fleet_stance = aggressive
 						set_aggro_range_measure_from = self
 						set_aggro_range = 100
+						set_fleet_flag = is_garrison_fleet
 					}
 				}
 			}
@@ -1457,6 +1458,7 @@ hostile_init_12 = {
 }
 
 # Mining Drones
+# hostile_init_12_mining_drones = { }
 # UNCHANGED
 
 # Mining Drone Destroyers
@@ -1468,7 +1470,7 @@ hostile_init_12 = {
 # Mining Drone Home
 # UNCHANGED
 
-# Tiyanki
+# Tiyanki Home System
 hostile_init_15 = {
 	class = "rl_standard_stars"
 
@@ -1485,7 +1487,7 @@ hostile_init_15 = {
 		}
 	}
 
-	flags = { tiyanki_home_system }
+	flags = { tiyanki_home_system space_critter_system }
 
 	planet = {
 		count = 1
@@ -1551,11 +1553,12 @@ hostile_init_15 = {
 # Tiyanki Spawn System
 # Changing this rather than through an event b/c the game short-circuits when creating new home fleets.
 hostile_init_16 = {
-	class = "rl_standard_stars"
+	class = "rl_starting_stars" # "rl_standard_stars"
 	name = "NAME_Tiyana_Vek"
+	# It makes sense to have this system uses a star that
+	# supports life while the graveyard uses a dying star.
 
 	usage = misc_system_init
-	#usage_odds = 90000 # Guaranteed spawn?
 	usage_odds = {
 		base = 90000
 		modifier = {
@@ -1565,7 +1568,7 @@ hostile_init_16 = {
 	}
 	max_instances = 1
 
-	flags = { tiyanki_spawn_system }
+	flags = { tiyanki_spawn_system space_critter_system }
 
 	planet = {
 		count = 1
@@ -1718,7 +1721,7 @@ hostile_init_18 = {
 			factor = 0
 			OR = {
 				has_star_flag = empire_cluster
-				#has_apocalypse = yes
+				# host_has_dlc = "Apocalypse"
 			}
 		}
 		modifier = {
