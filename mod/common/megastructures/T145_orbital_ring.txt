@@ -9,6 +9,8 @@ orbital_ring = {
 	show_in_outliner = no
 	build_time = 720
 
+	starbase = starbase_level_orbital_ring_tier_1
+
 	resources = {
 		category = megastructures
 		cost = {
@@ -71,6 +73,13 @@ orbital_ring = {
 					is_artificial = yes # Can't be built around ring worlds or habitats.
 				}
 			}
+			# Don't care about orbital debris.
+			# custom_tooltip = {
+			# 	fail_text = "requires_no_orbital_debris"
+			# 	NOR = {
+			# 		has_planet_flag = has_orbital_debris
+			# 	}
+			# }
 			if = {
 				limit = {
 					from = { is_ai = yes }
@@ -111,7 +120,7 @@ orbital_ring = {
 			factor = 3
 			any_system_colony = {
                 # Encourage AI to build o-rings.
-				num_pops >= 30 # 50
+				num_pops >= 20 # 50
 				NOT = { exists = orbital_defence }
 			}
 		}
