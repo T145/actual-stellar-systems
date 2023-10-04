@@ -526,7 +526,7 @@ pc_habitat = {
 
 	modifier = {
 		planet_colony_development_speed_mult = 2.0 # Habitats should be fast to colonize
-		pop_environment_tolerance = 0.70
+		pop_environment_tolerance = 0.40
 	}
 
 	carry_cap_per_free_district = @carry_cap_low
