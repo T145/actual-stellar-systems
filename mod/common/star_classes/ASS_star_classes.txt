@@ -248,3 +248,12 @@ sc_trinary_4 = { # Trinary System
 	spawn_odds		= 15 # 30
 	num_planets	 	= { min = 4 max = 10 }
 }
+
+random_list = {
+	name = "rl_starting_stars"
+	stars = {
+		"sc_f"
+		"sc_g"
+		"sc_k"
+	}
+}

@@ -1901,3 +1901,27 @@ hostile_init_18 = {
 
 # Klendath (mining drone system)
 # UNCHANGED
+
+# Added more "warm worlds" for variation.
+random_list = {
+	name = "rl_voidspawn_egg"
+	planets = {
+		"pc_continental"
+		"pc_desert"
+		"pc_tropical"
+		"pc_arid"
+		"pc_ocean"
+		#"pc_tundra"
+		#"pc_arctic"
+		#"pc_alpine"
+		"pc_savannah"
+		#"pc_asteroid"
+		"pc_gas_giant"
+		"pc_molten"
+		"pc_barren"
+		#"pc_barren_cold"
+		#"pc_toxic"
+		#"pc_frozen"
+		"pc_gaia"
+	}
+}
