@@ -1,4 +1,4 @@
-version="2.3.9"
+version="3.0.0"
 tags={
 	"Balance"
 	"Events"
@@ -7,6 +7,6 @@ tags={
 	"Gameplay"
 	"Graphics"
 }
-name="Actual Stellar Systems"
-supported_version="3.6.*"
+name="『 3.9 』Actual Stellar Systems"
+supported_version="3.9.*"
 remote_file_id="2904128489"
