@@ -60,9 +60,7 @@ event = {
 						save_global_event_target_as = caravaneer_fleet1_country
 						create_fleet = {
 							name = "NAME_Caravaneer_Fleet1_fleet"
-							settings = {
-								spawn_debris = no
-							}
+							settings = { spawn_debris = no }
 							effect = {
 								set_fleet_stance = passive
 								set_formation_scale = 2.5
@@ -95,7 +93,7 @@ event = {
 							}
 						}
 						create_leader = {
-							class = ruler
+							class = admiral
 							species = this
 							name = random
 							skill = 5
@@ -193,7 +191,7 @@ event = {
 							}
 						}
 						create_leader = {
-							class = ruler
+							class = admiral
 							species = this
 							name = random
 							skill = 5
@@ -306,7 +304,7 @@ event = {
 							}
 						}
 						create_leader = {
-							class = ruler
+							class = admiral
 							species = event_target:racket_species
 							name = random
 							skill = 5
