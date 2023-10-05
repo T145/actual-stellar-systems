@@ -1,13 +1,14 @@
 on_game_start = {
 	events = {
 		t145.1
-		t145.2
+		t145.20
 		cara.5000
+		t145.40
 	}
 }
 
 on_monthly_pulse = {
 	events = {
-		t145.10
+		t145.2
 	}
 }

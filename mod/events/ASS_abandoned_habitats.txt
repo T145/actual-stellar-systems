@@ -1,23 +1,12 @@
 ##########
-# CORE EVENTS
-# ID 1-99
+# ABANDONED HABITATS
+# ID 20-39
 #########
 
 namespace = t145
 
 event = {
-	id = t145.1
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		set_global_flag = "has_ass_dlc"
-	}
-}
-
-# Spawn Habitats
-event = {
-	id = t145.2
+	id = t145.20
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -574,91 +563,6 @@ event = {
 					}
 				}
 			}
-		}
-	}
-}
-
-# Consistently spawn Tiyanki fleets
-event = {
-	id = t145.10
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		NOT = { has_global_flag = tiyanki_home_cleared }
-		exists = event_target:tiyanki_spawn_system
-		any_country = {
-			OR = {
-				is_country_type = tiyanki
-				is_country_type = tiyanki_garrison
-			}
-			OR = {
-				AND = {
-					galaxy_size = tiny
-					num_fleets < 1
-				}
-				AND = {
-					galaxy_size = small
-					num_fleets < 2
-				}
-				AND = {
-					galaxy_size = medium
-					num_fleets < 4
-				}
-				AND = {
-					galaxy_size = large
-					num_fleets < 6
-				}
-				AND = {
-					galaxy_size = huge
-					num_fleets < 8
-				}
-			}
-		}
-	}
-
-	immediate = {
-		random_list = {
-			10 = {
-				event_target:tiyanki_spawn_system = {
-					if = {
-						limit = {
-							has_star_flag = tiyanki_spawn_system
-						}
-
-						random_system_planet = {
-							limit = {
-								OR = {
-									has_planet_flag = tiyanki_giant1
-									has_planet_flag = tiyanki_giant2
-									has_planet_flag = tiyanki_giant3
-									has_planet_flag = tiyanki_giant4
-								}
-							}
-							save_event_target_as = giant
-
-							random_list = {
-								10 = {
-									create_tiyanki_fleet_1 = yes
-								}
-								10 = {
-									create_tiyanki_fleet_2 = yes
-								}
-								10 = {
-									create_tiyanki_fleet_3 = yes
-								}
-								10 = {
-									create_tiyanki_fleet_4 = yes
-								}
-								10 = {
-									create_tiyanki_fleet_5 = yes
-								}
-							}
-						}
-					}
-				}
-			}
-			150 = {}
 		}
 	}
 }

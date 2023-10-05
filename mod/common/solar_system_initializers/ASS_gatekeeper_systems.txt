@@ -1,3 +1,5 @@
+@base_moon_distance = 10
+
 # Copies of L-cluster star systems but with B-class stars
 gatekeepers_basic_b_01 = {
 	class = "sc_b"

@@ -1,3 +1,5 @@
+@base_moon_distance = 10
+
 pre_ftl_init_01 = {
 	# Changed from rl_standard_stars to reflect star class changes
 	class = "rl_starting_stars"
