@@ -1,0 +1,26 @@
+leader_trait_governor_gray = {
+	cost = 0
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = governor
+		ICON = "GFX_leader_trait_psionic_chosen_one"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	immortal_leaders = yes
+	modifier = {
+		planet_buildings_cost_mult = -0.4
+		planet_building_build_speed_mult = 0.4
+		planet_jobs_energy_produces_mult = 0.15
+		planet_jobs_minerals_produces_mult = 0.15
+		deposit_blockers_cost_mult = -0.4
+		planet_clear_blocker_speed_mult = 0.4
+		starbase_shipyard_build_speed_mult = 0.15
+		starbase_shipyard_build_cost_mult = -0.05
+	}
+
+	leader_class = { governor }
+	initial = no
+	randomized = no
+}
