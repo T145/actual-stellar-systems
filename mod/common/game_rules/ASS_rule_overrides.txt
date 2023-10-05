@@ -18,6 +18,6 @@ can_enter_system_by_jump = {
 		NOT = { has_star_flag = lcluster }
 
 		# Extragalactic clusters
-		NOT = { has_star_flag = lcluster }
+		NOT = { has_star_flag = extragalactic_cluster }
 	}
 }
