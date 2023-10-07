@@ -47,7 +47,7 @@ gfx_settings = {
 
 	# Shader settings
 	# Is affected by SPECULAR_INTENSITY_MULT
-	cubemap_intensity = 0.4#0.4
+	cubemap_intensity = 0.4 #0.4
 
 	# Works for planets, nor for ships
 	# Planets ambient light
