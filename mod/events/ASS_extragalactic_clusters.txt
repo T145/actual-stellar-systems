@@ -6,10 +6,11 @@
 namespace = t145
 
 # determines which cluster will spawn
-country_event = {
+event = {
 	id = t145.40
 	hide_window = yes
-	fire_only_once = yes
+	is_triggered_only = yes
+
 	trigger = {
 		NOT = {
 			any_system = { has_star_flag = extragalactic_cluster }
@@ -17,25 +18,25 @@ country_event = {
 		}
 	}
 
-	mean_time_to_happen = { days = 1 }
-
 	immediate = {
 		set_global_flag = extragalactic_cluster_spawned
 
-		random_list = {
-			# Hexagon Cluster; 14 systems
-			15 = { country_event = { id = t145.41 } }
-			# Steed Cluster; 8 systems
-			20 = { country_event = { id = t145.42 } }
-			# Atronach Cluster; 10 systems
-			20 = { country_event = { id = t145.43 } }
-			# Apprentice Cluster; 11 systems
-			20 = { country_event = { id = t145.44 } }
-			# Big Dipper Cluster; 7 systems
-			10 = { country_event = { id = t145.45 } }
-			2 = {
-				country_event = { id = t145.42 }
-				country_event = { id = t145.44 }
+		random_country = {
+			random_list = {
+				# Hexagon Cluster; 14 systems
+				15 = { country_event = { id = t145.41 } }
+				# Steed Cluster; 8 systems
+				20 = { country_event = { id = t145.42 } }
+				# Atronach Cluster; 10 systems
+				20 = { country_event = { id = t145.43 } }
+				# Apprentice Cluster; 11 systems
+				20 = { country_event = { id = t145.44 } }
+				# Big Dipper Cluster; 7 systems
+				10 = { country_event = { id = t145.45 } }
+				2 = {
+					country_event = { id = t145.42 }
+					country_event = { id = t145.44 }
+				}
 			}
 		}
 	}
