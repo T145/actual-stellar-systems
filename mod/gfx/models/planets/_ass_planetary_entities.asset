@@ -5,11 +5,11 @@
 # GAS GIANTS
 ##########
 entity = {
-	name = "gas_giant_100_entity"
+	name = "gas_giant_70_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_00.dds"
+		texture_diffuse = "gas_giant_70_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -25,11 +25,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_101_entity"
+	name = "gas_giant_71_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_01.dds"
+		texture_diffuse = "gas_giant_71_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -45,11 +45,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_102_entity"
+	name = "gas_giant_72_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_02.dds"
+		texture_diffuse = "gas_giant_72_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -65,11 +65,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_103_entity"
+	name = "gas_giant_73_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_03.dds"
+		texture_diffuse = "gas_giant_73_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -85,11 +85,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_104_entity"
+	name = "gas_giant_74_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_04.dds"
+		texture_diffuse = "gas_giant_74_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -105,11 +105,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_105_entity"
+	name = "gas_giant_75_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_05.dds"
+		texture_diffuse = "gas_giant_75_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -125,11 +125,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_106_entity"
+	name = "gas_giant_76_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_06.dds"
+		texture_diffuse = "gas_giant_76_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -145,11 +145,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_107_entity"
+	name = "gas_giant_77_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_07.dds"
+		texture_diffuse = "gas_giant_77_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -165,11 +165,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_108_entity"
+	name = "gas_giant_78_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_08.dds"
+		texture_diffuse = "gas_giant_78_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -185,11 +185,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_109_entity"
+	name = "gas_giant_79_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_09.dds"
+		texture_diffuse = "gas_giant_79_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -205,11 +205,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_110_entity"
+	name = "gas_giant_80_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_10.dds"
+		texture_diffuse = "gas_giant_80_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -225,11 +225,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_111_entity"
+	name = "gas_giant_81_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_11.dds"
+		texture_diffuse = "gas_giant_81_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -245,11 +245,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_112_entity"
+	name = "gas_giant_82_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_12.dds"
+		texture_diffuse = "gas_giant_82_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -265,11 +265,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_113_entity"
+	name = "gas_giant_83_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_13.dds"
+		texture_diffuse = "gas_giant_83_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -285,11 +285,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_114_entity"
+	name = "gas_giant_84_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_14.dds"
+		texture_diffuse = "gas_giant_84_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -305,11 +305,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_115_entity"
+	name = "gas_giant_85_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_15.dds"
+		texture_diffuse = "gas_giant_85_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -325,11 +325,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_116_entity"
+	name = "gas_giant_86_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_16.dds"
+		texture_diffuse = "gas_giant_86_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -345,11 +345,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_117_entity"
+	name = "gas_giant_87_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_17.dds"
+		texture_diffuse = "gas_giant_87_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -365,11 +365,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_118_entity"
+	name = "gas_giant_88_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_18.dds"
+		texture_diffuse = "gas_giant_88_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -385,11 +385,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_119_entity"
+	name = "gas_giant_89_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_19.dds"
+		texture_diffuse = "gas_giant_89_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -405,11 +405,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_120_entity"
+	name = "gas_giant_90_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_20.dds"
+		texture_diffuse = "gas_giant_90_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -425,11 +425,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_121_entity"
+	name = "gas_giant_91_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_21.dds"
+		texture_diffuse = "gas_giant_91_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -445,11 +445,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_122_entity"
+	name = "gas_giant_92_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_22.dds"
+		texture_diffuse = "gas_giant_92_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -465,11 +465,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_123_entity"
+	name = "gas_giant_93_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_23.dds"
+		texture_diffuse = "gas_giant_93_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -485,11 +485,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_124_entity"
+	name = "gas_giant_94_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_24.dds"
+		texture_diffuse = "gas_giant_94_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -505,11 +505,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_125_entity"
+	name = "gas_giant_95_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_25.dds"
+		texture_diffuse = "gas_giant_95_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -525,11 +525,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_126_entity"
+	name = "gas_giant_96_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_26.dds"
+		texture_diffuse = "gas_giant_96_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -545,11 +545,11 @@ entity = {
 }
 
 entity = {
-	name = "gas_giant_127_entity"
+	name = "gas_giant_97_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_gas_27.dds"
+		texture_diffuse = "gas_giant_97_diffuse.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
 		shader = PdxMeshGasGiant
@@ -568,11 +568,11 @@ entity = {
 # BARREN
 ##########
 entity = {
-	name = "barren_planet_100_entity"
+	name = "barren_planet_70_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_barren_00.dds"
+		texture_diffuse = "barren_70.dds"
 		texture_normal = "barren_04_normal.dds"
 		texture_specular = "barren_04_specular.dds"
 	}
@@ -592,11 +592,11 @@ entity = {
 }
 
 entity = {
-	name = "barren_planet_101_entity"
+	name = "barren_planet_71_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_barren_01.dds"
+		texture_diffuse = "barren_71_diffuse.dds"
 		texture_normal = "barren_04_normal.dds"
 		texture_specular = "barren_04_specular.dds"
 	}
@@ -616,11 +616,11 @@ entity = {
 }
 
 entity = {
-	name = "barren_planet_102_entity"
+	name = "barren_planet_72_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_barren_02.dds"
+		texture_diffuse = "barren_72_diffuse.dds"
 		texture_normal = "barren_04_normal.dds"
 		texture_specular = "barren_04_specular.dds"
 	}
@@ -640,11 +640,11 @@ entity = {
 }
 
 entity = {
-	name = "barren_planet_103_entity"
+	name = "barren_planet_73_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_barren_03.dds"
+		texture_diffuse = "barren_73_diffuse.dds"
 		texture_normal = "barren_04_normal.dds"
 		texture_specular = "barren_04_specular.dds"
 	}
@@ -664,11 +664,11 @@ entity = {
 }
 
 entity = {
-	name = "barren_planet_104_entity"
+	name = "barren_planet_74_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_barren_04.dds"
+		texture_diffuse = "barren_74_diffuse.dds"
 		texture_normal = "barren_04_normal.dds"
 		texture_specular = "barren_04_specular.dds"
 	}
@@ -691,11 +691,11 @@ entity = {
 # COLD BARREN
 ##########
 entity = {
-	name = "cold_barren_planet_100_entity"
+	name = "cold_barren_planet_70_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_cold_barren_00.dds"
+		texture_diffuse = "cold_barren_70_diffuse.dds"
 		texture_normal = "barren_03_normal.dds"
 		texture_specular = "barren_03_specular.dds"
 	}
@@ -715,11 +715,11 @@ entity = {
 }
 
 entity = {
-	name = "cold_barren_planet_101_entity"
+	name = "cold_barren_planet_71_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_cold_barren_01.dds"
+		texture_diffuse = "cold_barren_71_diffuse.dds"
 		texture_normal = "barren_03_normal.dds"
 		texture_specular = "barren_03_specular.dds"
 	}
@@ -739,11 +739,11 @@ entity = {
 }
 
 entity = {
-	name = "cold_barren_planet_102_entity"
+	name = "cold_barren_planet_72_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_cold_barren_02.dds"
+		texture_diffuse = "cold_barren_72_diffuse.dds"
 		texture_normal = "barren_03_normal.dds"
 		texture_specular = "barren_03_specular.dds"
 	}
@@ -763,11 +763,11 @@ entity = {
 }
 
 entity = {
-	name = "cold_barren_planet_103_entity"
+	name = "cold_barren_planet_73_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_cold_barren_03.dds"
+		texture_diffuse = "cold_barren_73_diffuse.dds"
 		texture_normal = "barren_03_normal.dds"
 		texture_specular = "barren_03_specular.dds"
 	}
@@ -790,11 +790,11 @@ entity = {
 # CONTINENTAL
 ##########
 entity = {
-	name = "continental_planet_100_entity"
+	name = "continental_planet_70_entity"
 	pdxmesh = "planet_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_continental_00.dds"
+		texture_diffuse = "continental_70_diffuse.dds"
 		texture_normal = "continental_01_normals.dds"
 		texture_specular = "continental_01_spec.dds"
 	}
@@ -827,11 +827,11 @@ entity = {
 }
 
 entity = {
-	name = "continental_planet_101_entity"
+	name = "continental_planet_71_entity"
 	pdxmesh = "planet_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_continental_01.dds"
+		texture_diffuse = "continental_71_diffuse.dds"
 		texture_normal = "continental_02_normals.dds"
 		texture_specular = "continental_02_spec.dds"
 	}
@@ -864,11 +864,11 @@ entity = {
 }
 
 entity = {
-	name = "continental_planet_102_entity"
+	name = "continental_planet_72_entity"
 	pdxmesh = "planet_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_continental_02.dds"
+		texture_diffuse = "continental_72_diffuse.dds"
 		texture_normal = "continental_03_normals.dds"
 		texture_specular = "continental_03_spec.dds"
 	}
@@ -901,11 +901,11 @@ entity = {
 }
 
 entity = {
-	name = "continental_planet_103_entity"
+	name = "continental_planet_73_entity"
 	pdxmesh = "planet_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_continental_03.dds"
+		texture_diffuse = "continental_73_diffuse.dds"
 		texture_normal = "continental_04_normals.dds"
 		texture_specular = "continental_04_spec.dds"
 	}
@@ -941,11 +941,11 @@ entity = {
 # TROPICAL
 ##########
 entity = {
-	name = "tropical_planet_100_entity"
+	name = "tropical_planet_70_entity"
 	pdxmesh = "planet_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_tropical_00.dds"
+		texture_diffuse = "tropical_70_diffuse.dds"
 		texture_normal = "tropical_01_normal.dds"
 		texture_specular = "tropical_01_spec.dds"
 	}
@@ -971,11 +971,11 @@ entity = {
 }
 
 entity = {
-	name = "tropical_planet_101_entity"
+	name = "tropical_planet_71_entity"
 	pdxmesh = "planet_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_tropical_01.dds"
+		texture_diffuse = "tropical_71_diffuse.dds"
 		texture_normal = "tropical_02_normal.dds"
 		texture_specular = "tropical_02_spec.dds"
 	}
@@ -1001,11 +1001,11 @@ entity = {
 }
 
 entity = {
-	name = "tropical_planet_102_entity"
+	name = "tropical_planet_72_entity"
 	pdxmesh = "planet_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "ass_tropical_02.dds"
+		texture_diffuse = "tropical_72_diffuse.dds"
 		texture_normal = "tropical_03_normal.dds"
 		texture_specular = "tropical_03_spec.dds"
 	}
