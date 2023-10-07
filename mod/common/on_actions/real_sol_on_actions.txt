@@ -1,0 +1,33 @@
+on_planet_class_changed = {
+	events = {
+		# Mercury
+		# real_sol.1
+
+		# Venus
+		realsol.2
+
+		# Earth
+		realsol.3
+
+		# Luna
+		realsol.31
+
+		# Mars
+		realsol.4
+
+		# Jupiter
+		realsol.5
+
+		# Europa
+		realsol.52
+
+		# Saturn
+		realsol.6
+
+		# Uranus
+		realsol.7
+
+		# Neptune
+		realsol.8
+	}
+}
