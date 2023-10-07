@@ -1,781 +1,578 @@
+#####    Planet attachments    ######
+@gas_giant_scale = 1.2
 
 ###########
 # GAS GIANTS
 ##########
 entity = {
-	name = "gas_giant_07_entity"
+	name = "gas_giant_100_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_07_diffuse.dds"
+		texture_diffuse = "ass_gas_00.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_08_entity"
+	name = "gas_giant_101_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_08_diffuse.dds"
+		texture_diffuse = "ass_gas_01.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_09_entity"
+	name = "gas_giant_102_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_09_diffuse.dds"
+		texture_diffuse = "ass_gas_02.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_15_entity"
+	name = "gas_giant_103_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_15_diffuse.dds"
+		texture_diffuse = "ass_gas_03.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_31_entity"
+	name = "gas_giant_104_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_31_diffuse.dds"
+		texture_diffuse = "ass_gas_04.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_66_entity"
+	name = "gas_giant_105_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_66_diffuse.dds"
+		texture_diffuse = "ass_gas_05.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_67_entity"
+	name = "gas_giant_106_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_67_diffuse.dds"
+		texture_diffuse = "ass_gas_06.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_68_entity"
+	name = "gas_giant_107_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_68_diffuse.dds"
+		texture_diffuse = "ass_gas_07.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_69_entity"
+	name = "gas_giant_108_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_69_diffuse.dds"
+		texture_diffuse = "ass_gas_08.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_70_entity"
+	name = "gas_giant_109_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_70_diffuse.dds"
+		texture_diffuse = "ass_gas_09.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_71_entity"
+	name = "gas_giant_110_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_71_diffuse.dds"
+		texture_diffuse = "ass_gas_10.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_72_entity"
+	name = "gas_giant_111_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_72_diffuse.dds"
+		texture_diffuse = "ass_gas_11.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_73_entity"
+	name = "gas_giant_112_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_73_diffuse.dds"
+		texture_diffuse = "ass_gas_12.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_74_entity"
+	name = "gas_giant_113_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_74_diffuse.dds"
+		texture_diffuse = "ass_gas_13.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_75_entity"
+	name = "gas_giant_114_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_75_diffuse.dds"
+		texture_diffuse = "ass_gas_14.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_76_entity"
+	name = "gas_giant_115_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_76_diffuse.dds"
+		texture_diffuse = "ass_gas_15.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_77_entity"
+	name = "gas_giant_116_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_77_diffuse.dds"
+		texture_diffuse = "ass_gas_16.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_78_entity"
+	name = "gas_giant_117_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_78_diffuse.dds"
+		texture_diffuse = "ass_gas_17.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_79_entity"
+	name = "gas_giant_118_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_79_diffuse.dds"
+		texture_diffuse = "ass_gas_18.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_80_entity"
+	name = "gas_giant_119_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_80_diffuse.dds"
+		texture_diffuse = "ass_gas_19.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_81_entity"
+	name = "gas_giant_120_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_81_diffuse.dds"
+		texture_diffuse = "ass_gas_20.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_82_entity"
+	name = "gas_giant_121_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_82_diffuse.dds"
+		texture_diffuse = "ass_gas_21.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_83_entity"
+	name = "gas_giant_122_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_83_diffuse.dds"
+		texture_diffuse = "ass_gas_22.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_84_entity"
+	name = "gas_giant_123_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_84_diffuse.dds"
+		texture_diffuse = "ass_gas_23.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_85_entity"
+	name = "gas_giant_124_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_85_diffuse.dds"
+		texture_diffuse = "ass_gas_24.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_86_entity"
+	name = "gas_giant_125_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_86_diffuse.dds"
+		texture_diffuse = "ass_gas_25.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_87_entity"
+	name = "gas_giant_126_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_87_diffuse.dds"
+		texture_diffuse = "ass_gas_26.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 entity = {
-	name = "gas_giant_88_entity"
+	name = "gas_giant_127_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "gas_giant_88_diffuse.dds"
+		texture_diffuse = "ass_gas_27.dds"
 		texture_normal = "gas_giant_01_normal.dds"
 		texture_specular = "gas_giant_01_specular.dds"
+		shader = PdxMeshGasGiant
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "gas_giant_amb_hum"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
-	scale = 1.2
+	scale = @gas_giant_scale
+	game_data = {
+		uv_animation_speed = 0.1
+	}
 }
 
 ###########
 # BARREN
 ##########
 entity = {
-	name = "barren_planet_05_entity"
+	name = "barren_planet_100_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "barren_05_diffuse.dds"
+		texture_diffuse = "ass_barren_00.dds"
 		texture_normal = "barren_04_normal.dds"
 		texture_specular = "barren_04_specular.dds"
 	}
@@ -787,35 +584,19 @@ entity = {
 		texture_specular = "poles_barren_2_specular.dds"
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class"
-			}
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class_02"
-			}
-		}
+	playback_rate = -1.0 # Rotation is reversed
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
 
 entity = {
-	name = "barren_planet_06_entity"
+	name = "barren_planet_101_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "barren_06_diffuse.dds"
+		texture_diffuse = "ass_barren_01.dds"
 		texture_normal = "barren_04_normal.dds"
 		texture_specular = "barren_04_specular.dds"
 	}
@@ -827,35 +608,19 @@ entity = {
 		texture_specular = "poles_barren_2_specular.dds"
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class"
-			}
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class_02"
-			}
-		}
+	playback_rate = -1.0 # Rotation is reversed
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
 
 entity = {
-	name = "barren_planet_07_entity"
+	name = "barren_planet_102_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "barren_07_diffuse.dds"
+		texture_diffuse = "ass_barren_02.dds"
 		texture_normal = "barren_04_normal.dds"
 		texture_specular = "barren_04_specular.dds"
 	}
@@ -867,35 +632,19 @@ entity = {
 		texture_specular = "poles_barren_2_specular.dds"
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class"
-			}
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class_02"
-			}
-		}
+	playback_rate = -1.0 # Rotation is reversed
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
 
 entity = {
-	name = "barren_planet_08_entity"
+	name = "barren_planet_103_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "barren_08_diffuse.dds"
+		texture_diffuse = "ass_barren_03.dds"
 		texture_normal = "barren_04_normal.dds"
 		texture_specular = "barren_04_specular.dds"
 	}
@@ -907,35 +656,19 @@ entity = {
 		texture_specular = "poles_barren_2_specular.dds"
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class"
-			}
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class_02"
-			}
-		}
+	playback_rate = -1.0 # Rotation is reversed
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
 
 entity = {
-	name = "barren_planet_09_entity"
+	name = "barren_planet_104_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "barren_09_diffuse.dds"
+		texture_diffuse = "ass_barren_04.dds"
 		texture_normal = "barren_04_normal.dds"
 		texture_specular = "barren_04_specular.dds"
 	}
@@ -947,26 +680,10 @@ entity = {
 		texture_specular = "poles_barren_2_specular.dds"
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class"
-			}
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class_02"
-			}
-		}
+	playback_rate = -1.0 # Rotation is reversed
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
 
@@ -974,11 +691,11 @@ entity = {
 # COLD BARREN
 ##########
 entity = {
-	name = "cold_barren_planet_04_entity"
+	name = "cold_barren_planet_100_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "cold_barren_04_diffuse.dds"
+		texture_diffuse = "ass_cold_barren_00.dds"
 		texture_normal = "barren_03_normal.dds"
 		texture_specular = "barren_03_specular.dds"
 	}
@@ -990,35 +707,19 @@ entity = {
 		texture_specular = "poles_barren_1_specular.dds"
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class"
-			}
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class_02"
-			}
-		}
+	playback_rate = -1.0 # Rotation is reversed
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
 
 entity = {
-	name = "cold_barren_planet_05_entity"
+	name = "cold_barren_planet_101_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "cold_barren_05_diffuse.dds"
+		texture_diffuse = "ass_cold_barren_01.dds"
 		texture_normal = "barren_03_normal.dds"
 		texture_specular = "barren_03_specular.dds"
 	}
@@ -1030,35 +731,19 @@ entity = {
 		texture_specular = "poles_barren_1_specular.dds"
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class"
-			}
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class_02"
-			}
-		}
+	playback_rate = -1.0 # Rotation is reversed
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
 
 entity = {
-	name = "cold_barren_planet_06_entity"
+	name = "cold_barren_planet_102_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "cold_barren_06_diffuse.dds"
+		texture_diffuse = "ass_cold_barren_02.dds"
 		texture_normal = "barren_03_normal.dds"
 		texture_specular = "barren_03_specular.dds"
 	}
@@ -1070,35 +755,19 @@ entity = {
 		texture_specular = "poles_barren_1_specular.dds"
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class"
-			}
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class_02"
-			}
-		}
+	playback_rate = -1.0 # Rotation is reversed
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
 
 entity = {
-	name = "cold_barren_planet_07_entity"
+	name = "cold_barren_planet_103_entity"
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "cold_barren_07_diffuse.dds"
+		texture_diffuse = "ass_cold_barren_03.dds"
 		texture_normal = "barren_03_normal.dds"
 		texture_specular = "barren_03_specular.dds"
 	}
@@ -1110,26 +779,10 @@ entity = {
 		texture_specular = "poles_barren_1_specular.dds"
 	}
 	default_state = "idle"
-	playback_rate = -1	# Rotation is reversed
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class"
-			}
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class_02"
-			}
-		}
+	playback_rate = -1.0 # Rotation is reversed
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
 
@@ -1137,11 +790,11 @@ entity = {
 # CONTINENTAL
 ##########
 entity = {
-	name = "continental_planet_06_entity"
+	name = "continental_planet_100_entity"
 	pdxmesh = "planet_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "continental_06_diffuse.dds"
+		texture_diffuse = "ass_continental_00.dds"
 		texture_normal = "continental_01_normals.dds"
 		texture_specular = "continental_01_spec.dds"
 	}
@@ -1167,34 +820,18 @@ entity = {
 		texture_specular = "nospec.dds"
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class"
-			}
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class_02"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
 
 entity = {
-	name = "continental_planet_07_entity"
+	name = "continental_planet_101_entity"
 	pdxmesh = "planet_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "continental_07_diffuse.dds"
+		texture_diffuse = "ass_continental_01.dds"
 		texture_normal = "continental_02_normals.dds"
 		texture_specular = "continental_02_spec.dds"
 	}
@@ -1220,34 +857,18 @@ entity = {
 		texture_specular = "nospec.dds"
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class"
-			}
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class_02"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
 
 entity = {
-	name = "continental_planet_08_entity"
+	name = "continental_planet_102_entity"
 	pdxmesh = "planet_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "continental_08_diffuse.dds"
+		texture_diffuse = "ass_continental_02.dds"
 		texture_normal = "continental_03_normals.dds"
 		texture_specular = "continental_03_spec.dds"
 	}
@@ -1273,34 +894,18 @@ entity = {
 		texture_specular = "nospec.dds"
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class"
-			}
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class_02"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
 
 entity = {
-	name = "continental_planet_09_entity"
+	name = "continental_planet_103_entity"
 	pdxmesh = "planet_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "continental_09_diffuse.dds"
+		texture_diffuse = "ass_continental_03.dds"
 		texture_normal = "continental_04_normals.dds"
 		texture_specular = "continental_04_spec.dds"
 	}
@@ -1326,25 +931,9 @@ entity = {
 		texture_specular = "nospec.dds"
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class"
-			}
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class_02"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
 
@@ -1352,11 +941,11 @@ entity = {
 # TROPICAL
 ##########
 entity = {
-	name = "tropical_planet_04_entity"
+	name = "tropical_planet_100_entity"
 	pdxmesh = "planet_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "tropical_04_diffuse.dds"
+		texture_diffuse = "ass_tropical_00.dds"
 		texture_normal = "tropical_01_normal.dds"
 		texture_specular = "tropical_01_spec.dds"
 	}
@@ -1375,34 +964,18 @@ entity = {
 		texture_specular = "nospec.dds"
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class"
-			}
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class_02"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
 
 entity = {
-	name = "tropical_planet_05_entity"
+	name = "tropical_planet_101_entity"
 	pdxmesh = "planet_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "tropical_05_diffuse.dds"
+		texture_diffuse = "ass_tropical_01.dds"
 		texture_normal = "tropical_02_normal.dds"
 		texture_specular = "tropical_02_spec.dds"
 	}
@@ -1421,34 +994,18 @@ entity = {
 		texture_specular = "nospec.dds"
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class"
-			}
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class_02"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
 
 entity = {
-	name = "tropical_planet_06_entity"
+	name = "tropical_planet_102_entity"
 	pdxmesh = "planet_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "tropical_06_diffuse.dds"
+		texture_diffuse = "ass_tropical_02.dds"
 		texture_normal = "tropical_03_normal.dds"
 		texture_specular = "tropical_03_spec.dds"
 	}
@@ -1467,24 +1024,8 @@ entity = {
 		texture_specular = "nospec.dds"
 	}
 	default_state = "idle"
-	state = {
-		name = "idle"
-		animation = "idle"
-		time_offset = {
-			0
-			100
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class"
-			}
-		}
-		start_event = {
-			trigger_once = yes
-			sound = {
-				soundeffect = "amb_planet_class_02"
-			}
-		}
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
