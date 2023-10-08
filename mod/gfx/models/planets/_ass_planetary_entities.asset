@@ -572,7 +572,7 @@ entity = {
 	pdxmesh = "planet_non_clouded_mesh"
 	meshsettings = {
 		name = "planet_geosphereShape"
-		texture_diffuse = "barren_70.dds"
+		texture_diffuse = "barren_70_diffuse.dds"
 		texture_normal = "barren_04_normal.dds"
 		texture_specular = "barren_04_specular.dds"
 	}
