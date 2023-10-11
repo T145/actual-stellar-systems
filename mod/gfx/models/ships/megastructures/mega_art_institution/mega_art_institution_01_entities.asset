@@ -1,0 +1,26 @@
+
+#####################################################
+#####											#####
+#####				Jury-Rigged Art 			#####
+#####											#####
+#####################################################
+
+
+entity = {
+	name = "mega_art_institution_01_jr_entity"                   ##mega_art_institution_01_jr_entity
+	pdxmesh = "mega_art_institution_01_jr_mesh"
+			
+	locator = { name = "debris"	position = { 0 0 0 } }	#7 0 0
+    locator = { name = "pos2"	position = { -13.5 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle" #animation = "idle" animation_speed = 0.7  ## animation = "idle" is from moving parts of vanilla stage 1+ structure
+		start_event = { node = "pos2" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+	}
+	
+	attach = { pos2 = "mega_art_institution_01_core_effect_entity" }
+	attach = { debris = "debris_small_01_entity" }
+}
+

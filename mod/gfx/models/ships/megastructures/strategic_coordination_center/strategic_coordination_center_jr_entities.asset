@@ -1,0 +1,19 @@
+
+#####################################################
+#####											#####
+#####		    	Jury-Rigged 	    		#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "strategic_coordination_center_jr_entity"
+	pdxmesh = "strategic_coordination_center_jr_mesh"
+#		locator = { name = "debris"	position = { 0 0 0 } }	
+		
+	default_state = "idle"
+	state = { name = "idle" state_time = 10
+		start_event = { trigger_once = yes sound = { soundeffect = "spy_orb_destroyed" stop_on_state_change = yes } }
+	}
+	
+#	attach = { debris = "debris_small_01_entity" }
+}

@@ -1,0 +1,56 @@
+
+
+## Level 2 sub-Entity with jury-rigged textures to be part of proper entity ##
+	
+entity = {
+	name = "interstellar_assembly_jr_subpart1_entity"
+	pdxmesh = "interstellar_assembly_01_stage_2_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.2 
+		start_event = { node = "effect_1" particle = "interstellar_assembly_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_interstellar_assembly_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_interstellar_assembly_pulse" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_interstellar_assembly_beats" } }
+		}
+
+	meshsettings = {
+		name = "body_3Shape"
+		index = 0
+		texture_diffuse =  "interstellar_assembly_jr01_diffuse.dds"  ##"arthropoid_01_interstellar_assembly_diffuse.dds"
+		texture_normal =   "interstellar_assembly_jr01_normal.dds"        ##"arthropoid_01_interstellar_assembly_normal.dds"
+		texture_specular = "interstellar_assembly_jr01_specular.dds"    ##"arthropoid_01_interstellar_assembly_specular.dds"
+		shader = "PdxMeshShip"
+	}
+	
+	attach = { ring_2 = "interstellar_assembly_effect_entity" }
+}
+
+
+## Main Jury-Rigged Interstellar Assembly Entity ##
+	
+entity = {
+	name = "interstellar_assembly_jr_entity"               ## "mammalian_01_interstellar_assembly_jr_entity"
+	pdxmesh = "interstellar_assembly_jr01_mesh"            ##"interstellar_assembly_01_stage_4_mesh"
+
+
+	locator = { name = "pos1"	position = { 0 -5 0 } }	
+	locator = { name = "pos2"	position = { 0 0 0 } }
+
+	default_state = "idle"
+#	state = { name = "idle" animation = "idle" animation_speed = 0.2	}
+
+	meshsettings = {
+		name = "body_4Shape"
+		index = 0
+#		texture_diffuse = "interstellar_assembly_jr01_diffuse.dds"
+#		texture_normal = "interstellar_assembly_jr01_normal.dds"
+#		texture_specular = "interstellar_assembly_jr01_specular.dds"
+		shader = "PdxMeshShip"
+	}
+	
+	attach = { pos2 = "interstellar_assembly_jr_subpart1_entity" }  ##mammalian_01_interstellar_assembly_stage_2_entity
+	attach = { pos1 = "debris_small_01_entity" }
+}
+

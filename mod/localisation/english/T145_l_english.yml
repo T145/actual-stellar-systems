@@ -6,6 +6,15 @@
 
  HABITAT_PLANET_TITLE:0 "Habitat [habitat_site.GetName]"
 
+ # DYSON SPHERE
+ t145.60.name:0 "Dyson Sphere Jury-Rigging"
+ t145.60.desc:0 "Hard at work, our [Root.GetAdj] engineers have come to a breakthrough while tinkering with the dyson sphere remains in the [From.From.GetName] system. There is just enough left in the structure to restore partial function! While the present solution is a bit hacky and may have unforseen future consequences, it's stable at the moment. Other observations suggest nearby debris could be used to further enhance it as well."
+ t145.60.a:0 "Excellent work!"
+
+ dyson_sphere_jury_rig:0 "Jury-Rigged Dyson Sphere"
+ dyson_sphere_jury_rig_DESC:0 "A Dyson Sphere partially restored from ruined stellar remnants. Our engineers believe it could then be upgraded further."
+ dyson_sphere_jury_rig_MEGASTRUCTURE_DETAILS:0 ""
+
  ####################################
  # Tile Blockers
  ####################################

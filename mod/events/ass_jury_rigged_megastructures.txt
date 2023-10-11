@@ -1,0 +1,73 @@
+##########
+# JURY-RIGGED MEGASTRUCTURES
+# ID 60-79
+#########
+
+namespace = t145
+
+# Jury-Rigged Dyson Sphere Site Built
+country_event = {
+	id = t145.60
+	title = t145.60.name
+	desc = t145.60.desc
+	picture = GFX_evt_megastructure_jr_construction
+	show_sound = event_dyson_sphere_build_start
+	location = FROMFROM
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = { is_megastructure_type = dyson_sphere_jury_rigged }
+	}
+
+	option = {
+		name = t145.60.a
+	}
+}
+
+# Jury-Rigged Dyson Sphere Frame Built Notification (HIDDEN)
+country_event = {
+	id = t145.61
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = { is_megastructure_type = dyson_sphere_jury_rigged }
+	}
+
+	immediate = {
+		FROMFROM = { save_event_target_as = dyson_system }
+		every_relation = {
+			limit = {
+				is_ai = no
+				has_communications = root
+				OR = {
+					has_intel_level = {
+						who = root
+						category = economy
+						level >= 1
+					}
+					has_intel_level = {
+						who = root
+						category = technology
+						level >= 1
+					}
+				}
+			}
+			country_event = { id = utopia.4002 }
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = started_first_dyson_sphere }
+			}
+			set_country_flag = started_first_dyson_sphere
+		}
+		else_if = {
+			limit = {
+				has_country_flag = started_first_dyson_sphere
+			}
+			set_country_flag = started_first_dyson_sphere_2
+		}
+	}
+}

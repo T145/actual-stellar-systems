@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxmesh = {
+		name = "interstellar_assembly_jr01_mesh"
+		file = "gfx/models/ships/megastructures/interstellar_assembly/interstellar_assembly_jr04.mesh"
+
+	}
+}

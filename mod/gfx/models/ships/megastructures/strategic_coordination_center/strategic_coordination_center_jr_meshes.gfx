@@ -1,0 +1,10 @@
+
+
+objectTypes = {
+	pdxmesh = {
+		name = "strategic_coordination_center_jr_mesh"
+		file = "gfx/models/ships/megastructures/strategic_coordination_center/strategic_coordination_center_jr.mesh"
+
+
+	}
+}
