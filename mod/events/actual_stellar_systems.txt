@@ -6,12 +6,43 @@
 namespace = t145
 
 event = {
-	id = t145.1
+	id = t145.0
 	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
 		set_global_flag = "has_ass_dlc"
+	}
+}
+
+event = {
+	id = t145.1
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		every_galaxy_planet = {
+			limit = {
+				exists = owner
+				owner = { is_country_type = primitive }
+				NOR = {
+					has_planet_flag = primitive_planet_name_set
+					is_planet_class = pc_relic
+					has_planet_flag = gigaflusion
+					has_planet_flag = paluushia
+					has_planet_flag = corrona
+					has_planet_flag = giga_eaw_planet
+				}
+			}
+			set_planet_flag = primitive_planet_name_set
+			if = {
+				limit = { has_planet_flag = planet_earth }
+				set_name = "NAME_Earth"
+			}
+			else = { set_name = random }
+		}
+		set_global_flag = primitive_planet_name_set
 	}
 }
 

@@ -1,5 +1,6 @@
 on_game_start = {
 	events = {
+		t145.0
 		t145.1
 		t145.20
 		cara.5000
