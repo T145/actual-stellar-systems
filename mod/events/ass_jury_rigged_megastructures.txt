@@ -5,19 +5,22 @@
 
 namespace = t145
 
-# Jury-Rigged Dyson Sphere Site Built
+# NOTES:
+# - We don't need the "encounter" events since they're only for ruined megastructures and jury rigs will not spawn naturally.
+
+# Dyson Sphere partially completed
 country_event = {
 	id = t145.60
 	title = t145.60.name
 	desc = t145.60.desc
 	picture = GFX_evt_megastructure_jr_construction
-	show_sound = event_dyson_sphere_build_start
+	show_sound = event_dyson_sphere_build_upgrade_panel
 	location = FROMFROM
 
 	is_triggered_only = yes
 
 	trigger = {
-		FROM = { is_megastructure_type = dyson_sphere_jury_rigged }
+		FROM = { is_megastructure_type = dyson_sphere_jury_rig }
 	}
 
 	option = {
@@ -25,49 +28,36 @@ country_event = {
 	}
 }
 
-# Jury-Rigged Dyson Sphere Frame Built Notification (HIDDEN)
+# Alert Messages for intermediate steps
 country_event = {
-	id = t145.61
+	id = t145.79
 	hide_window = yes
-
 	is_triggered_only = yes
 
 	trigger = {
-		FROM = { is_megastructure_type = dyson_sphere_jury_rigged }
+		from = {
+			OR = {
+				is_megastructure_type = dyson_sphere_jury_rig
+			}
+		}
 	}
 
 	immediate = {
-		FROMFROM = { save_event_target_as = dyson_system }
-		every_relation = {
-			limit = {
-				is_ai = no
-				has_communications = root
-				OR = {
-					has_intel_level = {
-						who = root
-						category = economy
-						level >= 1
-					}
-					has_intel_level = {
-						who = root
-						category = technology
-						level >= 1
-					}
-				}
+		create_message = {
+			type = MEGASTRUCTURE_UPGRADED
+			localization = MESSAGE_MEGASTRUCTURE_UPGRADED
+			days = 30
+			target = from # the Go To
+			variable = {
+				type = name
+				localization = MEGASTRUCTURE
+				scope = from
 			}
-			country_event = { id = utopia.4002 }
-		}
-		if = {
-			limit = {
-				NOT = { has_country_flag = started_first_dyson_sphere }
+			variable = {
+				type = name
+				localization = SYSTEM
+				scope = fromfrom
 			}
-			set_country_flag = started_first_dyson_sphere
-		}
-		else_if = {
-			limit = {
-				has_country_flag = started_first_dyson_sphere
-			}
-			set_country_flag = started_first_dyson_sphere_2
 		}
 	}
 }

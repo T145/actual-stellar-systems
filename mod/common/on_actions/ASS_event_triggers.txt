@@ -13,3 +13,14 @@ on_monthly_pulse = {
 		t145.2
 	}
 }
+
+# A Megastructure has been upgraded
+# Root = Country
+# From = Megastructure
+# FromFrom = System
+on_megastructure_upgraded = {
+	events = {
+		t145.60
+		t145.79
+	}
+}

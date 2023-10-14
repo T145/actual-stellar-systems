@@ -6,8 +6,8 @@ dyson_sphere_ruined = {
 	resources = {
 		category = megastructures
 
-		# Just keeping the structure stable makes it
-		# similar in cost to the Phase 0.
+		# Just keeping the structure stable makes
+		# it similar in cost to Phase 0.
 		upkeep = {
 			energy = 5
 		}
@@ -17,6 +17,8 @@ dyson_sphere_ruined = {
 		always = no
 	}
 }
+
+# BUGFIX: Ruined megas are no longer free from contingency limits.
 
 dyson_sphere_jury_rig = {
 	entity = "dyson_sphere_destroyed_entity"
@@ -46,19 +48,31 @@ dyson_sphere_jury_rig = {
 			set_graphical_culture = root.from
 		}
 	}
+	on_build_cancel = {}
 
+	# This is in case we go from ruined to jury rig and stay there.
 	on_build_complete = {
 		set_star_flag = dyson_sphere_built
+		remove_system_terraforming_candidates = yes
 		from = {
 			if = {
 				limit = {
-					has_relic = r_contingency_core
-					has_country_flag = built_dyson_sphere
+					AND = {
+						has_relic = r_contingency_core
+						has_country_flag = built_dyson_sphere
+					}
 				}
 				set_country_flag = built_dyson_sphere_contingency
 			}
 			set_country_flag = built_dyson_sphere
-			country_event = { id = t145.60 } # Ping the player
+		}
+		fromfrom.planet = {
+			if = {
+				limit = { has_orbital_station = yes }
+				orbital_station = {
+					dismantle = yes
+				}
+			}
 		}
 	}
 }
@@ -96,6 +110,15 @@ dyson_sphere_restored = {
 	}
 
 	on_build_complete = {
+		# BUGFIX: This is in case we go from ruined to restored.
+		if = {
+			limit = {
+				NOT = {
+					has_star_flag = dyson_sphere_built
+				}
+				set_star_flag = dyson_sphere_built
+			}
+		}
 		every_system_planet = {
 			limit = {
 				OR = {
@@ -124,6 +147,29 @@ dyson_sphere_restored = {
 			destroy_ambient_object = this
 		}
 		from = {
+			# BUGFIX: This is in case we go from ruined to restored.
+			if = { # This check needs to be first so we can tell if this is our second dyson sphere.
+				limit = {
+					AND = {
+						has_relic = r_contingency_core
+						has_country_flag = built_dyson_sphere
+						NOT = {
+							has_country_flag = built_dyson_sphere_contingency
+						}
+					}
+				}
+				set_country_flag = built_dyson_sphere_contingency
+			}
+			else = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = built_dyson_sphere
+						}
+					}
+					set_country_flag = built_dyson_sphere
+				}
+			}
 			set_country_flag = has_built_or_repaired_megastructure
 			country_event = { id = utopia.2011 }
 		}

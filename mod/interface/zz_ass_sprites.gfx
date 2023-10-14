@@ -1,0 +1,52 @@
+spriteTypes = {
+
+    # Override to fix the "Prosperous Unification" origin icon
+	spriteType = {
+		name = "GFX_evt_metropolis"
+		texturefile = "gfx/event_pictures/prosperous_unification.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	# Megastructures
+	spriteType = {
+		name = "GFX_dyson_sphere_jurg_rig_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/dyson_sphere_jury_rig.dds"
+	}
+	spriteType = {
+		name = "GFX_spy_orb_jury_rig_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/spy_orb_jury_rig.dds"
+	}
+	spriteType = {
+		name = "GFX_think_tank_jury_rig_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/think_tank_jury_rig.dds"
+	}
+	spriteType = {
+		name = "GFX_matter_decompressor_jury_rig_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/matter_decompressor_jury_rig.dds"
+	}
+	spriteType = {
+		name = "GFX_strategic_coordination_center_jury_rig_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/strategic_coordination_center_jury_rig.dds"
+	}
+	spriteType = {
+		name = "GFX_mega_art_installation_jury_rig_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/mega_art_installation_jury_rig.dds"
+	}
+	spriteType = {
+		name = "GFX_interstellar_assembly_jury_rig_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/interstellar_assembly_jury_rig.dds"
+	}
+	spriteType = {
+		name = "GFX_mega_shipyard_jury_rig_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/mega_shipyard_jury_rig.dds"
+	}
+	spriteType = {
+		name = "GFX_crisis_sphere_jury_rig_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/crisis_sphere_jury_rig.dds"
+	}
+	spriteType = {
+		name = "GFX_quantum_catapult_jury_rig_slingshot_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/quantum_catapult_jury_rig.dds"
+	}
+}
