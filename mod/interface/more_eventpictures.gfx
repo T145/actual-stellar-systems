@@ -1,0 +1,10 @@
+spriteTypes = {
+
+    # Override to fix the "Prosperous Unification" origin icon
+	spriteType = {
+		name = "GFX_evt_metropolis"
+		texturefile = "gfx/event_pictures/prosperous_unification.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
