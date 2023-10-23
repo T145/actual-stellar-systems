@@ -1,8 +1,9 @@
 spriteTypes = {
 
-    # Override to fix the "Prosperous Unification" origin icon
+	# Override to fix the "Prosperous Unification" origin icon
+	# so the new "metropolis" event icon can be displayed in the game.
 	spriteType = {
-		name = "GFX_evt_metropolis"
+		name = "GFX_origin_prosperous_unification"
 		texturefile = "gfx/event_pictures/prosperous_unification.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
