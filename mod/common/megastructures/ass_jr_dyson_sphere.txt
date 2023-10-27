@@ -116,8 +116,8 @@ dyson_sphere_restored = {
 				NOT = {
 					has_star_flag = dyson_sphere_built
 				}
-				set_star_flag = dyson_sphere_built
 			}
+			set_star_flag = dyson_sphere_built
 		}
 		every_system_planet = {
 			limit = {
