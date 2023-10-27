@@ -1,5 +1,5 @@
 NShip = {
-	FLEET_BASE_FORMATION_SCALE 	= 6.0 # 8	# 3.0
+	FLEET_BASE_FORMATION_SCALE 	= 5.0 # Vanilla = 3.0, Fleet Formation Scale = 8.0
 	FLEET_BASE_FORMATION_DIV	= 30
 }
 
