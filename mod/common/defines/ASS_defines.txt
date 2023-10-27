@@ -54,3 +54,8 @@ NGameplay = {
 	PLANET_ORBIT_DISTANCE_MIN_SIZE = 20	# 10
 	PLANET_ORBIT_DISTANCE_SIZE_SCALE = 0.55 # 0.33	# extra orbit distance per planet size over PLANET_ORBIT_DISTANCE_MIN_SIZE
 }
+
+NAI = {
+	MAX_EXPANSION_DISTANCE = 1			#2	# Max number of jumps away AI will build starbases
+	MAX_EXPANSION_DISTANCE_SUBJECT = 1	#2	# Max number of jumps away AI subjects will build starbases
+}
