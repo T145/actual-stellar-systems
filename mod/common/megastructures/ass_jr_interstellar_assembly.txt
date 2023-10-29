@@ -1,0 +1,71 @@
+# Ruined Interstellar Assembly
+interstellar_assembly_ruined = {
+	entity = "interstellar_assembly_01_destroyed_entity"
+	construction_entity = "interstellar_assembly_01_destroyed_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = {
+		x = -27
+		y = -27
+	}
+	resources = {
+		category = megastructures
+		# Just keeping the structure stable makes
+		# it similar in cost to Phase 0.
+		upkeep = {
+			energy = 5
+		}
+	}
+	potential = {
+		always = no
+	}
+}
+
+interstellar_assembly_jury_rig = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = {
+		x = -27
+		y = -27
+	}
+	build_time = 600	# 1800
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000			## 10% of restored
+		}
+		upkeep = {
+			consumer_goods = 10			## level 1 = 10, restored = 30
+		}
+	}
+
+	upgrade_from = {
+		interstellar_assembly_ruined
+	}
+
+	country_modifier = {
+		diplo_weight_mult = 0.05
+		planet_immigration_pull_mult = 0.15		## restored one = 1
+		# enables triggered_opinion_of_interstellar_assembly_jr
+	}
+
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		from = {
+			if = {
+				limit = {
+					AND = {
+						has_relic = r_contingency_core
+						has_country_flag = built_interstellar_assembly_site						# BUGFIX: Was previously built_mega_shipyard_site
+					}
+				}
+				set_country_flag = built_interstellar_assembly_site_contingency
+			}
+			set_country_flag = built_interstellar_assembly_site
+		}
+	}
+}

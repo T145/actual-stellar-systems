@@ -13,7 +13,7 @@ country_event = {
 	id = t145.60
 	title = t145.60.name
 	desc = t145.60.desc
-	picture = GFX_evt_megastructure_jr_construction
+	picture = GFX_megastructure_construction_background
 	show_sound = event_dyson_sphere_build_upgrade_panel
 	location = FROMFROM
 
@@ -28,6 +28,46 @@ country_event = {
 	}
 }
 
+# Science Nexus partially completed
+country_event = {
+	id = t145.61
+	title = t145.61.name
+	desc = t145.61.desc
+	picture = GFX_megastructure_construction_background
+	show_sound = event_think_tank_build_upgrade
+	location = FROMFROM
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = { is_megastructure_type = think_tank_jury_rig }
+	}
+
+	option = {
+		name = t145.61.a
+	}
+}
+
+# Sentry Array partially completed
+country_event = {
+	id = t145.62
+	title = t145.62.name
+	desc = t145.62.desc
+	picture = GFX_megastructure_construction_background
+	show_sound = event_spy_orb_build_upgrade
+	location = FROMFROM
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = { is_megastructure_type = spy_orb_jury_rig }
+	}
+
+	option = {
+		name = t145.62.a
+	}
+}
+
 # Alert Messages for intermediate steps
 country_event = {
 	id = t145.79
@@ -38,6 +78,8 @@ country_event = {
 		from = {
 			OR = {
 				is_megastructure_type = dyson_sphere_jury_rig
+				is_megastructure_type = think_tank_jury_rig
+				is_megastructure_type = spy_orb_jury_rig
 			}
 		}
 	}
