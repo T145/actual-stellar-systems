@@ -94,7 +94,7 @@ spy_orb_jury_rig = {
 	on_build_cancel = {}
 	on_build_complete = {
 		set_star_flag = spy_orb_built
-		# BUGFIX: Be sure the planet knows it has a sentry array.
+		# BUGFIX: Be sure the planet knows it has a megastructure.
 		fromfrom.planet = {
 			set_planet_flag = has_megastructure
 		}
@@ -183,7 +183,7 @@ spy_orb_restored = {
 		}
 		from = {
 			# BUGFIX: This is in case we go from ruined to restored.
-			if = { # This check needs to be first so we can tell if this is our second dyson sphere.
+			if = { # This check needs to be first so we can tell if this is our second sentry array.
 				limit = {
 					AND = {
 						has_relic = r_contingency_core
