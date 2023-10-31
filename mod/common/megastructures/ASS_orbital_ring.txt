@@ -65,7 +65,13 @@ orbital_ring = {
 			custom_tooltip = {
 				fail_text = "requires_no_existing_megastructure"
 				NOR = {
-					has_planet_flag = megastructure # No building around gigastructures.
+					AND = {
+						has_planet_flag = has_megastructure
+						# Special exception so you can build an orbital ring even if you have MSI's warship as a habitat.
+						NOT = {
+							has_planet_flag = has_payback_habitat
+						}
+					}
 					# has_planet_flag = has_megastructure
 					has_planet_flag = orbital_ring_planet # CUSTOM
 					has_planet_flag = ruined_orbital_ring_planet
